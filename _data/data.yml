@@ -8,24 +8,24 @@ sidebar:
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: Moisés Jurado
-  tagline: Full Stack Developer | Python | DevOps Engineer | CI/CD | RPA Developer | PSD I
+  name: Elias Jurado
+  tagline: Full Stack Developer | Backend Engineer | CI/CD | Net Developer | Flutter Developer 
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: moises003@gmail.com
-  phone: #012 345 6789
-  timezone: America/Perú Timezone
+  email: ridimdev@gmail.com
+  phone: +51 920 050 617
+  timezone: America/Peru Timezone | UTC-5
   citizenship:
-  website: moisesjurad0.github.io/online-cv #do not add http://
-  linkedin: moisesjurad0
+  website: ridimdev.github.io/online-cv #do not add http://
+  linkedin: eliasjurado
   xing: #alandoe
-  github: moisesjurad0
+  github: ridimdev
   telegram: # add your nickname without '@' sign
   gitlab:
   bitbucket:
   twitter: # '@moisesjurad0'
-  stack-overflow: 3499921/moisesj # Number/Username, e.g. 123456/alandoe
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
   pdf: #http://www.africau.edu/images/default/sample.pdf
@@ -34,10 +34,10 @@ sidebar:
     title: Languages
     info:
       - idiom: English
-        level: Professional
+        level: B2 Upper Intermediate
 
       - idiom: Spanish
-        level: Native
+        level: Native Speaker
 
   # interests:
   #   title: Interests
@@ -55,31 +55,28 @@ career-profile:
   title: Career Profile
   summary: |
     ++ Hi 👋
-    I'm Moisés, I'm a sr developer and devOps engineer
+    I'm Elias, I'm a sr developer
     thanks for visiting my profile 🙇‍♂️
 
     ++ My set of skills:
-    - Python (Requests, Selenium + ChromeDriver, Beautiful Soup, pysftp, SQLAlchemy, Pandas, Matplotlib, Django, Flask, Pytest, Flake8, Mypy ,Coverage.py, tox, Boto3, Robot Framework, Robocorp RPA Framework, Scrapy)
-    - Java (Spring, Maven, JMS, MDB)
     - C#, .NET, ASP.NET (MVC & Web API), Razor Pages, WCF, EF Core, LINQ
-    - Linux scripting, AWK
-    - Blue Prism
-    - Oracle Database (PL/SQL), Microsoft SQL Server (Transact-SQL), MySQL, SQLite, PostgreSQL, DynamoDB
+    - Java, Spring, Maven, Gradle
+    - Mobile: Dart, Flutter, Android, Swift
+    - Python, Pandas, Requests, Boto3
+    - Oracle Database (PL/SQL), Microsoft SQL Server (Transact-SQL), MySQL, SQLite, PostgreSQL, Firestore, MongoDB, Dynamo
     - CI/CD (GitHub Actions, BitBucket Pipelines)
-    - Git (GitHub, GitLab, BitBucket)
-    - SonarCloud
-    - Docker, Docker Compose, Docker Hub, GitHub Packages
-    - Kubernetes, Kubectl, Helm, Operators, ArgoCD, Prometheus, Prometheus Exporters, Grafana, Nginx Ingress Controller
-    - AWS, Azure, Terraform
-    - SOAP, REST, Swagger, JavaScript, JQuery, TypeScript
-    - Charging Systems
+    - Git, TFS (GitHub, GitLab, BitBucket, Azure Repos)
+    - Docker, Docker Compose, Docker Hub
+    - AWS, Azure, GCP, Windows Server 2012, Terraform
+    - WebSphere MQ, Rabbit MQ, PubSub, gRPC
+    - SOAP, REST, Swagger, JavaScript, JQuery, TypeScript, Angular
     - Applications Servers and Network Servers
 
     ++ Checkout my GitHub: 
-    github.com/moisesjurad0
+    github.com/ridimdev
 
     ++ Checkout my Credly:
-    credly.com/users/moisesjurad0
+    credly.com/users/eliasjurado
 education:
   title: Education
   info:
@@ -105,9 +102,9 @@ education:
     #       pretium quis, sem.
     #         - Bullet point
     #         - Bullet point
-    - degree: Systems Analist
-      university: Universidad de Piura - Escuela Tecnológica Superior
-      time: 2007 - 2009
+    - degree: Computing and Informatics Technician
+      university: Cibertec Technological Institute
+      time: 2016 - 2020
       details: |
         Describe your study here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -116,9 +113,9 @@ education:
         pretium quis, sem.
           - Bullet point
           - Bullet point
-    - degree: Systems Programmer
-      university: Universidad de Piura - Escuela Tecnológica Superior
-      time: 2007 - 2008
+    - degree: History and Cultural Management Bachelor
+      university: University of Piura 
+      time: 2003 - 2009
       details: |
         Describe your study here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -129,311 +126,102 @@ education:
           - Bullet point
 
 experiences:
-  title: Experiences
+  title: Career History
   info:
-    - role: Lean RPA Analyst
-      time: Nov 2020 - Aug 2022
-      company: Indra
+    - role: Sr .Net Developer
+      time: Sep 2022 - Sep 2023
+      company: Globant
       details: |
-        ++ Client: Telefónica del Perú // Sector: Telco
+        ++ Client: Walt Disney Parks and Resorts // Sector: Entertainment
 
         ++ About:
-        - I worked for the "Claims Team" where I designed and developed robots and automations for various claim processes, including "claim registration", "previous consultation", and "claim resolution". These processes covered claims/complaints originating from Osiptel (landline and mobile, 1st and 2nd instance) as well as the "Book of Claims" from Indecopi.
+        - I worked for the "Labor Services Platform" which is a centralized integration platform for aggregating data from various upstream source systems responsible for payrolls for cast members.
         - In my role, I led the technical aspects of the team, overseeing passes to production, monitoring, and troubleshooting issues. I also managed repositories, mentored the team, conducted devOps training, handled stakeholder management, and made improvement proposals.
 
         ++ Technologies:
-        - Python
-        - Python - Requests
-        - Python - Selenium + Chrome Driver
-        - Python - Pandas
-        - Python - Beautiful Soup
-        - Python - pysftp
-        - Python - SQLAlchemy
+        - C#, .Net Framework
+        - MSTest, NUnit, Moq
+        - Patterns: Repository, Manager, Facade, Singleton, MVC
+        - GCP PubSub gRPC
+        - Websphere MQ
+        - Oracle PL/SQL
         - Microsoft SQL Server
         - SQL, T-SQL
         - CI/CD, DevOps
-        - Docker, Kubernetes
-        - Blue Prism + .NET modules (C# & Visual Basic)
-        - AWK (Linux)
+        - Firestore
 
-        ++ Process: Scrum, RPA
+        ++ Process: Scrum, Agile
 
         ++ Tools:
-        - Git / BitBucket / BitBucket Pipelines
-        - SonarCloud
+        - Git / TFS
+        - Jenkins
         - Postman
-        - Jira / Trello
+        - Jira, Confluence
         - Splunk
-    - role: Technical leader
-      time: Oct 2019 - Nov 2020
-      company: Global HITSS
+        - Windows Server 2012
+    - role: Technical Leader
+      time: Nov 2021 - Jun 2022
+      company: Grupo EBIM - IT Consulting
       details: |
-        ++ Client: Claro (América Móvil) // Sector: Telco
+        ++ Client: Ajinomoto // Sector: Foods
 
         ++ About:
-        After my previous experience working for the same client I became technical leader and successfully guided the same team in achieving additional goals, e.g.
-        - "Navigation Attempt for Prepaid Clients - Notification" feature.
-        - "Turning Phone On for Prepaid Clients - Notification" feature.
-        - "Degradation of Wireless Internet IFI and LTE - Notification" feature.
-        - Notificactions Proceses E2E - Maintenance and documentation aligned to Claro Development Standards.
-        - Management and monitoring of Production Passes.
-        - Risk Management of initiatives.
-        - Issues troubleshooting for Prepaid Platform & Apps.
-        - Participation in the committees of production passes. Transfer to support and monitoring teams.
-        - Linux Scripts migration from using IN (Optiva) to use CBIO (Ericson).
-        - Programming of the EAI integration to reduce the load of transactions reaching the IN, using Huawei PCRF as an intermediary.
+        After my previous experience working for the same client I became technical leader and successfully guided the same team. I headed following initiatives:
+        - Web and mobile integration projects with relational database, PI and SAP.
+        - Rest API with SQL Server, Net Core and JWT on Windows Server 2012 and mobile sales application with Flutter. Web development with Angular. Load and download files, export Excel and PDF files.
+        - Serverless Rest API on AWS with PostgreSQL, Python, JWT, Boto3 and Dynamo.
+        - Rest API with NestJS, Node, Express, Postgres, TypeORM, JWT, Middleware, Authguard, Swagger and cursors deployed on AWS.
 
         ++ Technologies:
-        - Java
-        - Spring
-        - Maven
-        - SOAP
+        - Java, Android, Maven, Gradle
+        - Dart, Flutter
         - REST
-        - Java Message Service (JMS)
-        - Message-Driven Bean (MDB)
-        - Event-Driven Architecture (EDA)
-        - Oracle WebLogic Server SOA
-        - Oracle WebLogic Server Middleware
-        - Oracle WebLogic EAI
-        - Oracle Service Bus (OSB)
-        - Oracle Database
-        - SQL, PL/SQL
-        - Linux scripting
-        - Apache James Server
-        - Huawei - USSD Push Gateway (Unstructured Supplementary Service Data)
-        - Huawei - IPCC IVR (Internet Protocol Contact Center, Interactive Voice Response)
-        - Mobiera - SAT Push Gateway (Service Access Terminal)
-        - Mahindra - NGAGE Notifications Manager
-        - Nokia - IN Unified OCS (Intelligent Network, Online Charging System)
-        - Optiva - IN (Intelligent Network)
-        - Huawei -  PCRF (Policy and Charging Rules Function)
-        - AWK
+        - DotNet
+        - Angular
+        - Typescript
+        - Sass
+        - NestJS
+        - Postgresql
+        - NodeJS
+        - Python
 
         ++ Process: Scrum & Waterfall
 
         ++ Tools:
-        - IBM Rational Team Concert
-        - ELK - Elasticsearch, Logstash, Kibana
-        - Git, BitBucket
-        - Apache Subversion (SVN)
-        - SonarQube
+        - Github, BitBucket
         - Trello
-        - SoapUI
-        - Postman
-        - Spring Tool Suite
-        - Putty, Kitty
-        - KornShell
-        - Vim
-        - WinSCP
-    - role: Software Developer
-      time: Oct 2018 - Oct 2019
-      company: MDP Consulting
+        - Postman        
+    - role: Full Stack Developer
+      time: Ene 2020 - Oct 2021
+      company: Ajinomoto
       details: |
-        ++ Client: Claro (América Móvil) // Sector: Telco
+        ++ Client: Ajinomoto // Sector: Foods
 
         ++ About:
-        I developed, tested, and delivered documented features and fixes for "Automatic Mobile Notifications". These notifications are aimed at promoting the sale of mobile data packages triggered by mobile events through interactive notifications on mobile phones, resulting in a monthly revenue of approx. $15 million, e.g.
-        - "Recharge - Notification" feature.
-        - "Triple your Phone Credit - Notification" feature.
-        - "Upgrade at Data Depletion - Notification" feature.
-        - "Call without Phone Credit - Notification" feature.
-        - "Functional Notifications Engine" feature.
+        I wrote, modified, integrated, tested and maintained software and mobile applications for Sales and Human Resources departments, leading following project teams:
+        - Process automation with RPA with UIPath and BPM with Auraquantic.
+        - Prepare reports, manuals, teaching strategies and other documentation on the operation, status of software.
+        - Collection and documentation of user requirements, logical and physical specifications.
+        - Migration from Skype to Teams. Trainer in MS Teams oriented to project management.
+        - IT creative leader for the digital transformation communication program oriented to South America.
 
         ++ Technologies:
         - Java
-        - Spring
-        - Maven
-        - SOAP
-        - REST
-        - Java Message Service (JMS)
-        - Message-Driven Bean (MDB)
-        - Event-Driven Architecture (EDA)
-        - Oracle WebLogic Server SOA
-        - Oracle WebLogic Server Middleware
-        - Oracle WebLogic EAI
-        - Oracle Service Bus (OSB)
-        - Oracle Database
-        - SQL, PL/SQL
-        - Linux scripting
-        - Apache James Server
-        - Huawei - USSD Push Gateway (Unstructured Supplementary Service Data)
-        - Huawei - IPCC IVR (Internet Protocol Contact Center, Interactive Voice Response)
-        - Mobiera - SAT Push Gateway (Service Access Terminal)
-        - Mahindra - NGAGE Notifications Manager
-        - Nokia - IN Unified OCS (Intelligent Network, Online Charging System)
-        - Optiva - IN (Intelligent Network)
+        - Android, Volley, MVP, Gradle, Maven
+        - C#, Visual Basic, .Net Framework
+        - MVC, ASP Net, Bootstrap, DevExpres
+        - SOAP, REST
+        - MS SQL Server
+        - SAP
+        - Windows Server 2012
 
         ++ Process: Scrum & Waterfall
 
         ++ Tools:
-        - IBM Rational Team Concert
-        - Git, BitBucket
-        - Apache Subversion (SVN)
-        - SonarQube
-        - Trello
-        - SoapUI
+        - MS Project
+        - Azure Boards
+        - Azure Repos
         - Postman
-        - Spring Tool Suite
-        - Putty, Kitty
-        - KornShell
-        - WinSCP
-    - role: Software Developer
-      time: Apr 2018 - Oct 2018
-      company: MDP Consulting
-      details: |
-        ++ Client: Belmond // Sector: Luxury Hospitality and Travel
-
-        ++ About: I had participation in the projects: "Schools Web" which involved modifying rules and fares for children's field trips on Belmond's Cusco local trains, and the "Information Screens" project, focused on developing informational displays for the trains.
-
-        ++ Technologies:
-        - .NET
-        - C#
-        - ASP.NET MVC
-        - Razor
-        - WCF
-        - LINQ
-        - Entity Framework
-        - IIS
-        - JavaScript
-        - jQuery
-        - Bootstrap
-        - HTML5
-        - CSS3
-        - AJAX
-        - JSON
-        - XML
-        - Microsoft SQL Server
-        - SQL, T-SQL
-        - WPF
-        - Azure
-
-        ++ Process: Scrum
-
-        ++ Tools:
-        - Git, BitBucket
-        - SonarQube
-        - OWASP
-        - SoapUI
-        - Postman
-    - role: Software Developer
-      time: Aug 2016 - Jun 2017
-      company: Sanitas Perú EPS
-      details: |
-        ++ Client: Internal IT staff member // Sector: Health Insurance Provider
-
-        ++ About:
-        - Developed, tested, delivered, and documented various features and fixes for the primary affiliations and sales application.
-        - Created a Windows service to enable real-time reporting of affiliations, disaffiliation and interactions records to the National Superintendence of Health (SUSALUD) by efficiently placing messages in their designated queue.
-        - Conducted training sessions for the developer team, focusing on source control systems (git) and the installation and utilization of GitLab.
-
-        ++ Technologies:
-        - .NET
-        - C#
-        - ASP.NET MVC
-        - Razor
-        - WCF
-        - LINQ
-        - NHibernate
-        - Fluent NHibernate
-        - IIS
-        - JavaScript
-        - jQuery
-        - Node.js, Grunt, grunt-sri
-        - Bootstrap
-        - HTML5
-        - CSS3
-        - AJAX
-        - JSON
-        - XML
-        - Oracle Database
-        - SQL, PL/SQL
-        - Windows Services
-        - WebSphere MQ
-
-        ++ Process: Agile
-
-        ++ Tools:
-        - Git, GitLab
-        - SoapUI
-        - Postman
-    - role: Software Developer
-      time: Aug 2014 - Aug 2016
-      company: Cosapi Data
-      details: |
-        ++ Client: Claro (América Móvil) // Sector: Telco
-
-        ++ About:
-        - I developed, documented, and successfully implemented multiple features for various apps (approx. 12 apps) within the company, with a particular focus on prepaid, postpaid and sells web apps (.NET).
-        - Additionally, I served as a level 3 escalation point for level 2 helpdesk tickets for nearly a year, addressing and resolving approximately 150 tickets across multiple applications (approx. 20 apps).
-
-        ++ Technologies:
-        - .NET
-        - C#
-        - Visual Basic
-        - ASP.NET
-        - WCF
-        - IIS
-        - LINQ
-        - JavaScript
-        - jQuery
-        - Bootstrap
-        - HTML
-        - CSS
-        - AJAX
-        - JSON
-        - XML
-        - Oracle Database
-        - SQL, PL/SQL
-        - AutoIt
-
-        ++ Process: Waterfall
-
-        ++ Tools:
-        - SoapUI 
-        - CA Harvest
-        - Microsoft Team Foundation Server
-    - role: Software Developer
-      time: Oct 2013 - Jun 2014
-      company: Matzziel Salcedo Consultores
-      details: |
-        ++ Client: Retirement Military Cooperative Aid (ACMR Perú) // Sector: Financial Services
-        ++ About: Developed an application for managing collections, bonuses, and loans.
-
-        ++ Client: Internal IT staff member
-        ++ About: Developed an in-house "Warehouse Management app".
-        - Implemented new modules to enhance the functionality of the app.
-        - Successfully migrated from SQL Server 2005 to SQL Server 2008.
-        - Upgraded DevExpress version from 3 to DevExpress 10.
-        - Integrated the app with Siscont, a third-party application.
-
-        ++ Technologies:
-        - .NET
-        - C#
-        - Visual Basic
-        - Microsoft SQL Server
-        - SQL, T-SQL
-        - DevExpress
-
-        ++ Tools:
-        - Siscont
-    - role: System Assistant
-      time: Mar 2013 - Aug 2013
-      company: METROIL
-      details: |
-        ++ Client: Internal IT staff member // Sector: Metrology Services
-
-        ++ About:
-        - I worked as an internal IT staff member of the company wich was specialized in calibration and certification of measuring devices.
-        - My responsibilities included maintaining the "Calibrations app" and providing support to Debian users. I ensured that the Debian clients were able to connect to their remote desktops on Windows Server using rdesktop, and I provided technical assistance to resolve any connectivity issues.
-
-        ++ Technologies:
-        - .NET
-        - Visual Basic 6.0
-        - Visual Basic
-        - Microsoft SQL Server
-        - SQL, T-SQL
-        - Microsoft Windows Server
-        - Debian GNU/Linux
 
 certifications:
   title: Certifications
@@ -475,36 +263,44 @@ certifications:
     #     Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
     #     Praesent felis nibh, eleifend id eleifend id, dictum id enim.
     #     Praesent venenatis erat non augue suscipit consectetur.
+    - name: "Microsoft Certified: Azure Data Fundamentals"
+      start: Oct. 2022
+      end:
+      organization: Amazon Web Services Training and Certification
+      credentialid: I436-8760
+      credentialurl: https://www.credly.com/badges/667e22ac-37d1-4bdf-a2da-cf0992afdfc8
+      credentialname:
+      details:
     - name: "AWS Cloud Quest: Cloud Practitioner"
-      start: May. 2023
+      start: Sep. 2022
       end:
       organization: Amazon Web Services Training and Certification
       credentialid:
-      credentialurl: https://www.credly.com/badges/128f217b-6f25-47d2-9fe7-c955a6dc4ba9
+      credentialurl: https://www.credly.com/badges/02b736b8-7ad3-4424-a9a5-b6dc8f86166a
       credentialname:
       details:
     - name: "Microsoft Certified: Azure Fundamentals"
-      start: Apr. 2023
+      start: Sep. 2022
       end:
       organization: Microsoft
-      credentialid: I699-5411
-      credentialurl: https://www.credly.com/badges/bb220481-e07d-407f-8585-219bb54c4135
+      credentialid: I407-4262
+      credentialurl: https://www.credly.com/badges/20f54446-91a6-400e-b6e1-743b9b01aa27
       credentialname:
       details:
-    - name: Professional Scrum Developer™ I (PSD I)
-      start: Feb. 2023
+    - name: GeneXus 17 Junior Developer
+      start: Sep. 2022
       end:
-      organization: Scrum.org
+      organization: GeneXus
       credentialid:
-      credentialurl: https://www.credly.com/badges/f7f1e6b9-8647-40b6-ba52-098d20e9b77e
+      credentialurl: https://training.genexus.com/permalink/5113?data=121037
       credentialname:
       details:
     - name: Scrum Foundation Professional Certificate - SFPC™
-      start: Aug. 2020
+      start: Sep. 2022
       end:
       organization: CertiProf
       credentialid:
-      credentialurl: https://www.credly.com/badges/dccdadd2-265a-436b-9c1c-ff9f6af6d5f0
+      credentialurl: https://www.credly.com/badges/9003a819-67c0-4c34-9f9c-65228c340586
       credentialname:
       details:
 
