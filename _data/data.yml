@@ -61,7 +61,8 @@ career-profile:
     ++ My set of skills:
     - C#, .NET, ASP.NET (MVC & Web API), Razor Pages, WCF, EF Core, LINQ
     - Java, Spring, Maven, Gradle
-    - Mobile: Dart, Flutter, Android, Swift
+    - Mobile: Android, Swift
+    - Multiplatform: Flutter, .Net Maui
     - Python, Pandas, Requests, Boto3
     - Oracle Database (PL/SQL), Microsoft SQL Server (Transact-SQL), MySQL, SQLite, PostgreSQL, Firestore, MongoDB, Dynamo
     - CI/CD (GitHub Actions, BitBucket Pipelines)
