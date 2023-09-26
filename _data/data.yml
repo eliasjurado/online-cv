@@ -39,17 +39,17 @@ sidebar:
       - idiom: Spanish
         level: Native Speaker
 
-  # interests:
-  #   title: Interests
-  #   info:
-  #     - item: Climbing
-  #       link:
+  interests:
+    title: Interests
+    info:
+      - item: Bass playing
+        link: amazonian-cumbia.eliasjurado.com
 
-  #     - item: Snowboarding
-  #       link:
+      - item: Snowboarding
+        link:
 
-  #     - item: Cooking
-  #       link:
+      - item: Cooking
+        link:
 
 career-profile:
   title: Profile
