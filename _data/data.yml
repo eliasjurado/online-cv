@@ -24,11 +24,11 @@ sidebar:
   telegram: # add your nickname without '@' sign
   gitlab:
   bitbucket:
-  twitter: # '@moisesjurad0'
+  twitter:
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
-  pdf: #http://www.africau.edu/images/default/sample.pdf
+  pdf: pdf.eliasjurado.com
 
   languages:
     title: Languages
@@ -42,14 +42,11 @@ sidebar:
   interests:
     title: Interests
     info:
+      - item: Flutter multiplatform development
+        link: play.google.com/store/apps/details?id=io.ridimdev.flutter_bmi
+
       - item: Bass playing
-        link: amazonian-cumbia.eliasjurado.com
-
-      - item: Snowboarding
-        link:
-
-      - item: Cooking
-        link:
+        link: bass.eliasjurado.com
 
 career-profile:
   title: Profile
@@ -59,66 +56,35 @@ career-profile:
     thanks for visiting my profile 🙇‍♂️
 
     ++ My set of skills:
-    - C#, .NET, ASP.NET (MVC & Web API), Razor Pages, WCF, EF Core, LINQ
+    - C#, .NET, ASP.NET (MVC & Web API), Razor Pages, WCF, EF Core, LinQ
     - Java, Spring, Maven, Gradle
-    - Mobile: Android, Swift
-    - Multiplatform: Flutter, .Net Maui
+    - Mobile: Android, Java, Volley, Velocity, Shared Preferences, Swift, CoreData
+    - Multiplatform: Flutter, Net-Maui
+    - Desktop: Winform, WPF, Xaml
     - Python, Pandas, Requests, Boto3
-    - Oracle Database (PL/SQL), Microsoft SQL Server (Transact-SQL), MySQL, SQLite, PostgreSQL, Firestore, MongoDB, Dynamo
-    - CI/CD (GitHub Actions, BitBucket Pipelines)
-    - Git, TFS (GitHub, GitLab, BitBucket, Azure Repos)
+    - Oracle PL/SQL, MS SQL Server T-SQL, MySQL, SQLite, PostgreSQL, Firestore, MongoDB, Dynamo
+    - CI/CD GitHub Actions, BitBucket Pipelines
+    - Git, TFS GitHub, GitLab, BitBucket, Azure Repos
     - Docker, Docker Compose, Docker Hub
     - AWS, Azure, GCP, Windows Server 2012, Terraform
     - WebSphere MQ, Rabbit MQ, PubSub, gRPC
     - SOAP, REST, Swagger, JavaScript, JQuery, TypeScript, Angular
-    - Applications Servers and Network Servers
+    - Application and Network Servers
 
 education:
   title: Education
   info:
-    # - degree: MSc in Computer Science
-    #     university: University of London
-    #     time: 2011 - 2012
-    #     details: |
-    #       Describe your study here lorem ipsum dolor sit amet, consectetuer
-    #       adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-    #       sociis natoque penatibus et magnis dis parturient montes, nascetur
-    #       ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-    #       pretium quis, sem.
-    #         - Bullet point
-    #         - Bullet point
-    #   - degree: BSc in Applied Mathematics
-    #     university: Bristol University
-    #     time: 2007 - 2011
-    #     details: |
-    #       Describe your study here lorem ipsum dolor sit amet, consectetuer
-    #       adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-    #       sociis natoque penatibus et magnis dis parturient montes, nascetur
-    #       ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-    #       pretium quis, sem.
-    #         - Bullet point
-    #         - Bullet point
     - degree: Computing and Informatics Technician
-      university: Cibertec Technological Institute
+      university: Cibertec Technological Institute, Peru
       time: 2016 - 2020
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
+        Describe your study here lorem ipsum dolor sit...
           - Bullet point
     - degree: History and Cultural Management Bachelor
-      university: University of Piura 
+      university: University of Piura, Peru
       time: 2003 - 2009
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
+        Describe your study here lorem ipsum dolor sit...
           - Bullet point
 
 experiences:
@@ -128,11 +94,12 @@ experiences:
       time: Sep 2022 - Sep 2023
       company: Globant
       details: |
-        ++ Client: Walt Disney Parks and Resorts // Sector: Entertainment
+        ++ Client: Walt Disney Parks and Resorts // Period  : Sep. 2022 - Sep. 2023
+           Sector: Entertainment                 // Location: Florida, USA
 
-        ++ About:
+        ++ Overview:
         - I worked for the "Labor Services Platform" which is a centralized integration platform for aggregating data from various upstream source systems responsible for payrolls for cast members.
-        - In my role, I led the technical aspects of the team, overseeing passes to production, monitoring, and troubleshooting issues. I also managed repositories, mentored the team, conducted devOps training, handled stakeholder management, and made improvement proposals.
+        - In my role, I co-led the technical aspects of the team, overseeing passes to production, monitoring, and troubleshooting issues. I also managed repositories, mentored the team, conducted onboarding training, handled stakeholder management, and made improvement proposals.
 
         ++ Technologies:
         - C#, .Net Framework
@@ -141,8 +108,7 @@ experiences:
         - GCP PubSub gRPC
         - Websphere MQ
         - Oracle PL/SQL
-        - Microsoft SQL Server
-        - SQL, T-SQL
+        - Microsoft SQL Server T-SQL
         - CI/CD, DevOps
         - Firestore
 
@@ -157,108 +123,123 @@ experiences:
         - Windows Server 2012
     - role: Technical Leader
       time: Nov 2021 - Jun 2022
-      company: Grupo EBIM - IT Consulting
+      company: EBIM
       details: |
-        ++ Client: Ajinomoto // Sector: Foods
+        ++ Client: Ajinomoto // Period  : Nov. 2021 - Jun. 2022
+           Sector: Foods     // Location: Lima, Peru
 
-        ++ About:
-        After my previous experience working for the same client I became technical leader and successfully guided the same team. I headed following initiatives:
-        - Web and mobile integration projects with relational database, PI and SAP.
-        - Rest API with SQL Server, Net Core and JWT on Windows Server 2012 and mobile sales application with Flutter. Web development with Angular. Load and download files, export Excel and PDF files.
-        - Serverless Rest API on AWS with PostgreSQL, Python, JWT, Boto3 and Dynamo.
-        - Rest API with NestJS, Node, Express, Postgres, TypeORM, JWT, Middleware, Authguard, Swagger and cursors deployed on AWS.
-
+        ++ Overview:
+        I led the integration of the company's systems with its branches in Ecuador, Chile and Bolivia, as well as with their respective official billing systems.
+        
         ++ Technologies:
-        - Java, Android, Maven, Gradle
-        - Dart, Flutter
-        - REST
-        - DotNet
+        - MS SQL Server
+        - NetCore 2.1/3.1
+        - Net 5/6
+        - REST API and SOAP WCF services
         - Angular
-        - Typescript
-        - Sass
-        - NestJS
-        - Postgresql
-        - NodeJS
+        - Flutter
+        - Firebase Auth - Notifications - Storage
+        - Windows Server 2012
+        - Email and file management
+        - Excel and PDF reporting
+        - SAP integration
+        - NestJS - Node
+        - Express
+        - Postgres
+        - TypeORM 
+        - Prisma
+        - JWT
+        - Middleware
+        - Authguard
+        - Swagger
+        - AWS
+
+        ++ Client: Avinka - Artisan // Period  : Dic. 2022 - Ene. 2023
+           Sector: Foods            // Location: Lima, Peru
+
+        ++ Overview:
+        I led the construction, hosting, security and support of digital resources for the company's marketing campaign for the 2021 Christmas season.
+        
+        ++ Technologies:
+        - MS SQL Server
+        - Node JS
+        - Angular
+        - Ubuntu 
+        - Windows Server 2012
+        - Digital Ocean
+        - AWS
+        - Lambda functions
         - Python
+        - Boto3
+        - PostgreSQL
+        - Dynamo.
 
         ++ Process: Scrum & Waterfall
 
         ++ Tools:
-        - Github, BitBucket
+        - Agile
         - Trello
         - Postman        
     - role: Full Stack Developer
       time: Ene 2020 - Oct 2021
       company: Ajinomoto
       details: |
-        ++ Client: Ajinomoto // Sector: Foods
+        ++ Sector: Foods // Location: Lima, Peru
 
-        ++ About:
-        I wrote, modified, integrated, tested and maintained software and mobile applications for Sales and Human Resources departments, leading following project teams:
-        - Process automation with RPA with UIPath and BPM with Auraquantic.
-        - Prepare reports, manuals, teaching strategies and other documentation on the operation, status of software.
-        - Collection and documentation of user requirements, logical and physical specifications.
-        - Migration from Skype to Teams. Trainer in MS Teams oriented to project management.
-        - IT creative leader for the digital transformation communication program oriented to South America.
+        ++ Overview:
+        As an IT department assistant, I had to maintain the source code of existing applications for the Sales, Marketing and Human Resources departments, as well as lead teams of developers external to the company.
+        On the one hand, Sales App was an Android mobile system created for salespeople who sent their records to the company's SAP system. These orders were controlled from a web monitor integrated with SAP, which generated reports according to the requirements of the Sales department. On the other hand, Human Resources application was responsible for recording and controlling worker evaluations.
 
         ++ Technologies:
-        - Java
-        - Android, Volley, MVP, Gradle, Maven
-        - C#, Visual Basic, .Net Framework
-        - MVC, ASP Net, Bootstrap, DevExpres
-        - SOAP, REST
         - MS SQL Server
-        - SAP
-        - Windows Server 2012
+        - SAP-PI, MM, SD
+        - Net 4
+        - C#
+        - Visual Basic 6
+        - WCF and REST web services
+        - Android
+        - Java
+        - Volley
+        - Velocity
+        - Bluetooth
+        - Geolocation
+        - IMEI
+        - SQLite
+        - Azure Devops
+        - MVP
+        - Gradle
+        - Maven
+        - ASP Net - DevExpress
+        - Bootstrap
+        - Javascript
+        - JQuery
+        - Ajax
 
-        ++ Process: Scrum & Waterfall
+        ++ Process: Waterfall
 
         ++ Tools:
         - MS Project
         - Azure Boards
         - Azure Repos
         - Postman
+    - role: Social Responsibility and Community Relations Assistant
+      time: Aug. 2011 - Dic. 2014
+      company: Sapet - CNPC (China National Petroleum Company)
+      details: |
+        ++ Sector: Energy // Location: Talara, Peru
+
+        ++ Overview:
+        My objective was to mitigate social conflicts with the communities that inhabited oil fields so that the company could expand its production by strengthening alliances with local leaders while complying with the country's socio-environmental legislation. To achieve this, I led social projects in health, education, environment and women's empowerment.
+        Additionally, I developed a plan focused on workers affiliated with the company's union so that they improve their perception of the company.
+
+        ++ Process: PMP
+
+        ++ Tools:
+        - MS Project
 
 certifications:
   title: Certifications
   list:
-    # - name: CV Builder
-    #   start: 2020
-    #   end: 2021
-    #   organization: Microsoft
-    #   credentialid: 111-222
-    #   credentialurl: www.google.com
-    #   credentialname: Google
-    #   details: |
-    #     Details about cert. Lorem ipsum dolor sit amet, consectetur
-    #     adipiscing elit.
-    #     Nullam eget orci purus. Nullam ultrices neque nibh.
-    #     Aenean fermentum, felis vulputate suscipit accumsan,
-    #     sem enim bibendum augue, sed convallis arcu lacus at dui.
-    #     Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-    #     Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-    #     Praesent venenatis erat non augue suscipit consectetur.
-
-    #     Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-    #     fringilla vel. Ut euismod, sem sed vulputate venenatis,
-    #     justo diam viverra velit, sed rhoncus leo leo eu justo.
-    #     Suspendisse placerat risus ante, sed porta nisi blandit at.
-    # - name: Git learning
-    #   start: 2019
-    #   end:
-    #   organization: Microsoft
-    #   credentialid: 111-222
-    #   credentialurl: www.github.com
-    #   credentialname: Github
-    #   details: |
-    #     Older certification. Lorem ipsum dolor sit amet, consectetur
-    #     adipiscing elit.
-    #     Nullam eget orci purus. Nullam ultrices neque nibh.
-    #     Aenean fermentum, felis vulputate suscipit accumsan,
-    #     sem enim bibendum augue, sed convallis arcu lacus at dui.
-    #     Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-    #     Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-    #     Praesent venenatis erat non augue suscipit consectetur.
     - name: "Microsoft Certified: Azure Data Fundamentals"
       start: Oct. 2022
       end:
@@ -275,6 +256,14 @@ certifications:
       credentialurl: https://www.credly.com/badges/02b736b8-7ad3-4424-a9a5-b6dc8f86166a
       credentialname:
       details:
+    - name: "AWS Partner: Accreditation (Technical)"
+      start: Sep. 2022
+      end:
+      organization: Amazon Web Services Training and Certification
+      credentialid:
+      credentialurl: https://www.credly.com/badges/2bf70bea-f821-46b1-8597-eaf075ce5abf
+      credentialname:
+      details:      
     - name: "Microsoft Certified: Azure Fundamentals"
       start: Sep. 2022
       end:
@@ -299,138 +288,6 @@ certifications:
       credentialurl: https://www.credly.com/badges/9003a819-67c0-4c34-9f9c-65228c340586
       credentialname:
       details:
-
-# projects:
-#   title: Projects
-#   intro: >
-#     You can list your side projects in this
-#     section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-#     Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-#   assignments:
-#     - title: Velocity
-#       link: "#hook"
-#       tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-#       - title: DevStudio
-#         link: "#"
-#         tagline: "A responsive website template designed to help web developers/designers market their services."
-
-#       - title: Tempo
-#         link: "#"
-#         tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-#       - title: Atom
-#         link: "#"
-#         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-#       - title: Delta
-#         link: "#"
-#         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-# oss:
-#     title: OSS Contributions
-#     intro: >
-#       You can list your open source software contributions in this
-#       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-#       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-#     contributions:
-#       - title: Tempo
-#         link: "#"
-#         tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-#       - title: Atom
-#         link: "#"
-#         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-#       - title: Delta
-#         link: "#"
-#         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-# publications:
-#     title: Publications
-#     intro: |
-#       You can list your publications in this section. Lorem ipsum dolor sit
-#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-#       bibendum fringilla a eu lectus.
-#     papers:
-#       - title: The Art of Computer Programming
-#         link: "#"
-#         authors: Donald E. Knuth
-#         conference: Addison-Wesley, 1968
-
-#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-#         link: "#"
-#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-#       - title: A syntax directed compiler for Algol 60
-#         link: "#"
-#         authors: Edgar T. Irons
-#         conference: "Comm. ACM 4 (1961), 51–55"
-
-# skills:
-#   title: Skills &amp; Proficiency
-
-#   toolset:
-#     - skill:
-#       name: Python => Requests, Selenium, Beautiful Soup, Pandas
-#       level: 100%
-
-#     - skill:
-#       name: Python - RPA Framework & Robot Framework & Robocorp
-#       level: 70%
-
-#     - skill:
-#       name: Python - Django & Flask
-#       level: 70%
-
-#     - skill:
-#       name: Docker & Compose
-#       level: 70%
-
-#     - skill:
-#       name: AWS, Azure
-#       level: 65%
-
-#     - skill:
-#       name: Javascript & jQuery
-#       level: 70%
-
-#     - skill:
-#       name: HTML5 & CSS
-#       level: 70%
-
-#     - skill:
-#       name: C#
-#       level: 100%
-
-#     - skill:
-#       name: Java
-#       level: 80%
-
-#     - skill:
-#       name: Git & GitHub & Github Actions, GitLab
-#       level: 90%
-
-#     - skill:
-#       name: Jenkins
-#       level: 60%
-
-#     - skill:
-#       name: Jekyll
-#       level: 50%
-
-#     - skill:
-#       name: Oracle Database
-#       level: 75%
-
-#     - skill:
-#       name: SQL Server
-#       level: 75%
-
-#     - skill:
-#       name: Scrum
-#       level: 85%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
