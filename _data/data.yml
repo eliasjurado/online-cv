@@ -50,7 +50,7 @@ sidebar:
 
 career-profile:
   title: Profile
-  summary: |
+  summary: |-
     ++ Hi 👋
     I'm Elias, I'm a sr developer
     thanks for visiting my profile 🙇‍♂️
@@ -93,7 +93,7 @@ experiences:
     - role: Sr .Net Developer
       time: Sep 2022 - Sep 2023
       company: Globant
-      details: |
+      details: |-
         ++ Client: Walt Disney Parks and Resorts\n
         &nbsp;&nbsp;&nbsp;Sector: Entertainment\n        
         &nbsp;&nbsp;&nbsp;Location: Florida, USA\n
@@ -126,7 +126,7 @@ experiences:
     - role: Technical Leader
       time: Nov 2021 - Jun 2022
       company: EBIM
-      details: |
+      details: |-
         ++ Client: Ajinomoto\n
         &nbsp;&nbsp;&nbsp;Sector: Foods\n
         &nbsp;&nbsp;&nbsp;Location: Lima, Peru\n
@@ -189,7 +189,7 @@ experiences:
     - role: Full Stack Developer
       time: Ene 2020 - Oct 2021
       company: Ajinomoto
-      details: |
+      details: |-
         ++ Sector: Foods\n
         &nbsp;&nbsp;&nbsp;Location: Lima, Peru
 
@@ -232,7 +232,7 @@ experiences:
     - role: Social Responsibility and Community Relations Assistant
       time: Aug. 2011 - Dic. 2014
       company: Sapet - CNPC (China National Petroleum Company)
-      details: |
+      details: |-
         ++ Sector: Energy\n
         &nbsp;&nbsp;&nbsp;Location: Talara, Peru
 
