@@ -95,8 +95,7 @@ experiences:
       company: Globant
       details: |
         ++ Client: Walt Disney Parks and Resorts // Period  : Sep. 2022 - Sep. 2023
-        
-           Sector: Entertainment                 // Location: Florida, USA
+        ++ Sector: Entertainment                 // Location: Florida, USA
 
         ++ Overview:
         - I worked for the "Labor Services Platform" which is a centralized integration platform for aggregating data from various upstream source systems responsible for payrolls for cast members.
@@ -127,8 +126,7 @@ experiences:
       company: EBIM
       details: |
         ++ Client: Ajinomoto // Period  : Nov. 2021 - Jun. 2022
-        
-           Sector: Foods     // Location: Lima, Peru
+        ++ Sector: Foods     // Location: Lima, Peru
 
         ++ Overview:
         I led the integration of the company's systems with its branches in Ecuador, Chile and Bolivia, as well as with their respective official billing systems.
@@ -157,8 +155,7 @@ experiences:
         - AWS
 
         ++ Client: Avinka - Artisan // Period  : Dic. 2022 - Ene. 2023
-        
-           Sector: Foods            // Location: Lima, Peru
+        ++ Sector: Foods            // Location: Lima, Peru
 
         ++ Overview:
         I led the construction, hosting, security and support of digital resources for the company's marketing campaign for the 2021 Christmas season.
