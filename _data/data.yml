@@ -51,9 +51,9 @@ sidebar:
 career-profile:
   title: Profile
   summary: |-
-    ++ Hi 👋
-    I'm Elias, I'm a sr developer
-    thanks for visiting my profile 🙇‍♂️
+    ++ Hi 👋<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; I'm Elias, I'm a sr developer<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Thanks for visiting my profile 🙇‍♂️
 
     ++ My set of skills:
     - C#, .NET, ASP.NET (MVC & Web API), Razor Pages, WCF, EF Core, LinQ
@@ -90,7 +90,7 @@ education:
 experiences:
   title: Experience
   info:
-    - role: Sr .Net Developer
+    - role: .Net Developer
       time: Sep 2022 - Sep 2023
       company: Globant
       details: |-
