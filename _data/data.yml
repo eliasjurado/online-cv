@@ -51,9 +51,7 @@ sidebar:
 career-profile:
   title: Profile
   summary: |-
-    ++ Hi 👋<br>
-    &nbsp;&nbsp;&nbsp;&nbsp; I'm Elias, I'm a sr developer<br>
-    &nbsp;&nbsp;&nbsp;&nbsp; Thanks for visiting my profile 🙇‍♂️
+    ++ Hi 👋 I'm Elias, I'm a sr developer, thanks for visiting my profile 🙇‍♂️
 
     ++ My set of skills:
     - C#, .NET, ASP.NET (MVC & Web API), Razor Pages, WCF, EF Core, LinQ
@@ -91,13 +89,13 @@ experiences:
   title: Experience
   info:
     - role: .Net Developer
-      time: Sep 2022 - Sep 2023
+      time: Sep 2022 - Currently
       company: Globant
       details: |-
         ++ Client: Walt Disney Parks and Resorts<br>
         &nbsp;&nbsp;&nbsp;&nbsp; Sector: Entertainment<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; Location: Florida, USA<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; Period: Sep. 2022 - Sep. 2023
+        &nbsp;&nbsp;&nbsp;&nbsp; Period: Sep 2022 - Sep 2023<br>       
+        &nbsp;&nbsp;&nbsp;&nbsp; Location: Florida, USA
 
         ++ Overview:
         - I worked for the "Labor Services Platform" which is a centralized integration platform for aggregating data from various upstream source systems responsible for payrolls for cast members.
@@ -129,8 +127,8 @@ experiences:
       details: |-
         ++ Client: Ajinomoto<br>
         &nbsp;&nbsp;&nbsp;&nbsp; Sector: Foods<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; Location: Lima, Peru<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; Period: Nov. 2021 - Jun. 2022
+        &nbsp;&nbsp;&nbsp;&nbsp; Period: Nov 2021 - Jun 2022<br>        
+        &nbsp;&nbsp;&nbsp;&nbsp; Location: Lima, Peru
 
         ++ Overview:
         I led the integration of the company's systems with its branches in Ecuador, Chile and Bolivia, as well as with their respective official billing systems.
@@ -160,9 +158,9 @@ experiences:
 
         ++ Client: Avinka - Artisan<br>
         &nbsp;&nbsp;&nbsp;&nbsp; Sector: Foods<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; Location: Lima, Peru<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; Period  : Dic. 2022 - Ene. 2023
-
+        &nbsp;&nbsp;&nbsp;&nbsp; Period  : Dic 2022 - Ene 2023<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; Location: Lima, Peru
+        
         ++ Overview:
         I led the construction, hosting, security and support of digital resources for the company's marketing campaign for the 2021 Christmas season.
         
@@ -230,7 +228,7 @@ experiences:
         - Azure Repos
         - Postman
     - role: Social Responsibility and Community Relations Assistant
-      time: Aug. 2011 - Dic. 2014
+      time: Aug 2011 - Dic 2014
       company: Sapet - CNPC (China National Petroleum Company)
       details: |-
         ++ Sector: Energy<br>
@@ -240,7 +238,7 @@ experiences:
         My objective was to mitigate social conflicts with the communities that inhabited oil fields so that the company could expand its production by strengthening alliances with local leaders while complying with the country's socio-environmental legislation. To achieve this, I led social projects in health, education, environment and women's empowerment.
         Additionally, I developed a plan focused on workers affiliated with the company's union so that they improve their perception of the company.
 
-        ++ Process: PMP
+        ++ Process: Critical Path Method
 
         ++ Tools:
         - MS Project
@@ -249,7 +247,7 @@ certifications:
   title: Certifications
   list:
     - name: "Microsoft Certified: Azure Data Fundamentals"
-      start: Oct. 2022
+      start: Oct 2022
       end:
       organization: Microsoft
       credentialid: I436-8760
@@ -257,7 +255,7 @@ certifications:
       credentialname:
       details:
     - name: "AWS Cloud Quest: Cloud Practitioner"
-      start: Sep. 2022
+      start: Sep 2022
       end:
       organization: Amazon Web Services Training and Certification
       credentialid:
@@ -265,7 +263,7 @@ certifications:
       credentialname:
       details:
     - name: "AWS Partner: Accreditation (Technical)"
-      start: Sep. 2022
+      start: Sep 2022
       end:
       organization: Amazon Web Services Training and Certification
       credentialid:
@@ -273,7 +271,7 @@ certifications:
       credentialname:
       details:      
     - name: "Microsoft Certified: Azure Fundamentals"
-      start: Sep. 2022
+      start: Sep 2022
       end:
       organization: Microsoft
       credentialid: I407-4262
@@ -281,7 +279,7 @@ certifications:
       credentialname:
       details:
     - name: GeneXus 17 Junior Developer
-      start: Sep. 2022
+      start: Sep 2022
       end:
       organization: GeneXus
       credentialid:
@@ -289,7 +287,7 @@ certifications:
       credentialname:
       details:
     - name: Scrum Foundation Professional Certificate - SFPC™
-      start: Sep. 2022
+      start: Sep 2022
       end:
       organization: CertiProf
       credentialid:
