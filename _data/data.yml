@@ -28,7 +28,7 @@ sidebar:
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
-  pdf: pdf.eliasjurado.com
+  pdf: https://pdf.eliasjurado.com
 
   languages:
     title: Languages
