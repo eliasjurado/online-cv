@@ -43,10 +43,10 @@ sidebar:
     title: Interests
     info:
       - item: Flutter multiplatform development
-        link: play.google.com/store/apps/details?id=io.ridimdev.flutter_bmi
+        link: https://play.google.com/store/apps/details?id=io.ridimdev.flutter_bmi
 
       - item: Bass playing
-        link: bass.eliasjurado.com
+        link: https://bass.eliasjurado.com
 
 career-profile:
   title: Profile
