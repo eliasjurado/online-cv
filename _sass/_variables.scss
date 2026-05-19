@@ -18,8 +18,12 @@ $danger:  #c0392b;
 $success: $brand-accent;
 
 // ── Typography ──────────────────────────────────────────────────────────────
-$font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-$font-sans:  'Inter', -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI', Roboto, sans-serif;
+// Tipografía única — sans-serif Helvetica-style en toda la marca (decisión mayo 2026).
+// Inter es Helvetica moderna optimizada para pantalla, con fallback a Helvetica/Arial del sistema.
+$font-sans:  'Inter', 'Helvetica Neue', Helvetica, Arial, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+// $font-serif queda como alias de $font-sans por retrocompatibilidad — toda la marca es ahora sans.
+// Antes apuntaba a Playfair Display; descartado. Cualquier archivo que aún use $font-serif sigue funcionando.
+$font-serif: $font-sans;
 $font-mono:  ui-monospace, 'SF Mono', Menlo, monospace;
 
 // ── Layout ──────────────────────────────────────────────────────────────────

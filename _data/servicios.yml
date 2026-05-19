@@ -1,9 +1,16 @@
-# Servicios destacados — usados en home y página /servicios
-# Editar este archivo cambia el sitio en el siguiente build.
+# Servicios — usados en home (cards esquemáticas) y página /servicios (detalle).
+# Cada entrada tiene:
+#   - nombre_corto: una palabra para branding (Web, Tienda, Flujo)
+#   - titulo: nombre completo para SEO y precisión (Diseño y desarrollo web...)
+#   - beneficio: frase emocional de gancho (lo que el cliente recibe)
+#   - resumen: descripción breve para la card del home
+#   - detalle: desarrollo completo para la página /servicios
 
 - slug: web
   icon: "🌐"
+  nombre_corto: Web
   titulo: Diseño y desarrollo web
+  beneficio: Tu negocio visible y profesional
   resumen: >-
     Sitios rápidos, mobile-first y SEO-ready. Desde landings hasta sitios
     institucionales con blog y panel de contenidos.
@@ -14,7 +21,9 @@
 
 - slug: ecommerce
   icon: "🛒"
+  nombre_corto: Tienda
   titulo: E-commerce con IA
+  beneficio: Vende cuando no estás
   resumen: >-
     Tiendas en línea con catálogo dinámico, checkout por WhatsApp o pasarela
     de pagos, panel de administración y reportes.
@@ -25,9 +34,11 @@
 
 - slug: automatizacion
   icon: "⚙️"
+  nombre_corto: Flujo
   titulo: Automatización para pymes
+  beneficio: Recupera el tiempo de tu equipo
   resumen: >-
-    Conecto los sistemas que ya usás (Excel, formularios, WhatsApp, contabilidad)
+    Conecto los sistemas que ya usas (Excel, formularios, WhatsApp, contabilidad)
     para que tu equipo deje de copiar y pegar.
   detalle: >-
     Análisis del flujo actual, propuesta de automatización con herramientas

@@ -7,9 +7,13 @@ subtitle: Tres líneas de trabajo, todas pensadas para que tu negocio venda más
 
 {% for s in site.data.servicios %}
 
-## {{ s.icon }} {{ s.titulo }}
+<section style="margin-bottom: 3rem;">
+  <p style="font-size: 0.8rem; color: #6b6b6b; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; margin: 0 0 0.25rem;">{{ s.titulo }}</p>
+  <h2 style="margin: 0 0 0.5rem; font-size: 2.25rem; letter-spacing: -0.02em;">{{ s.icon }} {{ s.nombre_corto | default: s.titulo }}</h2>
+  {% if s.beneficio %}<p style="font-size: 1.15rem; color: #1a1a1a; font-weight: 500; margin: 0 0 1.5rem;">{{ s.beneficio }}</p>{% endif %}
 
-{{ s.detalle }}
+  <p>{{ s.detalle }}</p>
+</section>
 
 {% unless forloop.last %}<hr style="margin: 3rem 0; border: 0; border-top: 1px solid var(--line, #e2e2e2);">{% endunless %}
 

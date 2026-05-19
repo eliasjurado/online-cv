@@ -5,7 +5,7 @@ destacado: true
 cliente: Hanna Comida Árabe
 industria: Gastronomía / Comida típica
 stack: Next.js · Supabase · Vercel · WhatsApp Cloud API
-url_vivo:
+url_vivo: https://hannacomidaarabe.com
 resumen: >-
   E-commerce con panel administrativo y checkout por WhatsApp para una panadería
   árabe en Miraflores. Reemplazó el flujo manual de pedidos por mensaje.

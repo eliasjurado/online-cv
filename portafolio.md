@@ -8,12 +8,17 @@ subtitle: Selección de proyectos en los que trabajo o trabajé. Más casos pró
 {% if site.proyectos.size > 0 %}
 <div class="grid grid--2">
   {%- for p in site.proyectos -%}
-    <a href="{{ p.url }}" class="card" style="text-decoration: none; color: inherit;">
+    <article class="card">
       <h3 class="card__title">{{ p.title }}</h3>
       {%- if p.cliente -%}<p class="text-sm" style="margin-bottom: 0.5rem;">{{ p.cliente }} · {{ p.industria }}</p>{%- endif -%}
       <p class="card__body">{{ p.resumen }}</p>
-      <p style="margin-top: 1rem; color: var(--brand-primary, #2b0548); font-size: 0.9rem;">Ver caso →</p>
-    </a>
+      <p style="margin-top: 1.25rem; display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center;">
+        <a href="{{ p.url }}" style="color: #2b0548; font-size: 0.9rem; text-decoration: none;">Ver caso →</a>
+        {%- if p.url_vivo -%}
+          <a href="{{ p.url_vivo }}" target="_blank" rel="noopener" style="color: #224805; font-size: 0.9rem; text-decoration: none;">Ver sitio en vivo ↗</a>
+        {%- endif -%}
+      </p>
+    </article>
   {%- endfor -%}
 </div>
 {% else %}

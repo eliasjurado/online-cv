@@ -75,7 +75,7 @@
   @media (min-width: $bp-md) { width: 220px; height: 220px; }
 }
 
-// ── Card de servicio / proyecto ─────────────────────────────────────────────
+// ── Card base — de servicio, proyecto, etc. ─────────────────────────────────
 .card {
   background: $bg;
   border: 1px solid $line;
@@ -99,6 +99,57 @@
   }
   &__title { margin-bottom: $s-2; font-size: 1.2rem; }
   &__body  { color: $muted; font-size: 0.95rem; margin: 0; }
+}
+
+// ── Card de servicio — jerarquía esquemática completa ───────────────────────
+// Estructura del contenido (en orden visual descendente):
+//   1. icon              — pequeño, decorativo
+//   2. card__title       — nombre_corto (Web / Tienda / Flujo) — palabra de impacto
+//   3. card__subtitle    — nombre largo (Diseño y desarrollo web…) — precisión y SEO
+//   4. card__benefit     — frase emocional ("Tu negocio visible y profesional")
+//   5. card__body        — descripción técnica breve
+//
+// El cliente escanea de arriba a abajo en 2-3 segundos y entiende qué es,
+// cómo lo llamas, qué le da a él, cómo lo entregas. Sin clicks ocultos.
+.card--servicio {
+  display: flex;
+  flex-direction: column;
+
+  .card__title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: $brand-primary;
+    margin-bottom: $s-1;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .card__subtitle {
+    font-size: 0.8rem;
+    color: $muted;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin: 0 0 $s-4;
+  }
+
+  .card__benefit {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: $ink;
+    line-height: 1.35;
+    margin: 0 0 $s-4;
+    padding-bottom: $s-4;
+    border-bottom: 1px solid $line;
+    text-wrap: balance;
+  }
+
+  .card__body {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: $muted;
+    margin: 0;
+  }
 }
 
 // ── Grid de cards ────────────────────────────────────────────────────────────
@@ -233,6 +284,58 @@
 
 .wa-form__submit {
   margin-top: $s-2;
+}
+
+// ── Wordmarks de clientes (sección "Confiaron en este trabajo") ─────────────
+// Cada cliente se renderiza como wordmark monocromático en color de marca,
+// sin usar su logo original. Esto preserva la disciplina cromática del sitio
+// y funciona como social proof B2B estándar (estilo Stripe, Vercel, Linear).
+.clientes-wordmarks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: $s-5;
+  @media (min-width: $bp-md) { gap: $s-7; }
+}
+
+.cliente-wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: $s-3 $s-4;
+  border-radius: $radius-sm;
+  transition: opacity $dur $ease, background $dur $ease, transform $dur $ease;
+
+  // Estado link
+  &[href]:hover {
+    background: $brand-primary-soft;
+    transform: translateY(-1px);
+  }
+  &[href]:focus-visible {
+    outline: 2px solid $brand-primary;
+    outline-offset: 2px;
+  }
+
+  &__name {
+    font-family: $font-sans;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: $brand-primary;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  &__industria {
+    font-size: 0.72rem;
+    color: $muted;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
 }
 
 // ── Quote / callout ──────────────────────────────────────────────────────────
