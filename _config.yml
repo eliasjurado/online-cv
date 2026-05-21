@@ -93,7 +93,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
-  - print.html
   - vendor
 
 # ── Tracker (deshabilitado — Universal Analytics deprecado en jul-2023) ──────
