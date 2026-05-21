@@ -4,11 +4,10 @@
 
 # ── Identidad del sitio ──────────────────────────────────────────────────────
 title: Elías Jurado
-tagline: Web, e-commerce y automatización para negocios que quieren crecer
+tagline: Acompaño la madurez digital de tu pyme — de la visibilidad a la conversión, de la conversión a la eficiencia
 description: >-
-  Diseño y desarrollo de sitios web, tiendas en línea y automatización
-  a medida para pymes en LATAM. Trabajo con Next.js, Supabase, Vercel
-  y herramientas que escalan.
+  Landing web, e-commerce y CRM en tres niveles ordenados como recorrido.
+  Hazte visible, vende cuando no estás, recupera el tiempo de tu equipo.
 url: 'https://eliasjurado.com'
 author:
   name: Elías Luis Jurado Santos
@@ -18,11 +17,14 @@ locale: es_PE
 timezone: America/Lima
 
 # ── Branding ─────────────────────────────────────────────────────────────────
+# Paleta oficial entregada por Miki (mayo 2026). 4 colores únicos documentados.
 brand:
-  primary: '#2b0548'
-  accent:  '#224805'
-  ink:     '#1a1a1a'
-chrome_mobile_color: '#2b0548'
+  primary:   '#000000'   # negro puro — institucional
+  accent:    '#243038'   # gris steel — acento elegante
+  muted:     '#606060'   # gris medio — texto secundario
+  white:     '#ffffff'   # blanco puro
+  ink:       '#000000'
+chrome_mobile_color: '#000000'
 
 # ── Contacto ─────────────────────────────────────────────────────────────────
 contact:
@@ -38,6 +40,7 @@ contact:
 whatsapp_messages:
   default:  'Hola Elías, vi tu web y me gustaría conversar sobre un proyecto.'
   hero:     'Hola Elías, vi tu web y me gustaría conversar sobre un proyecto.'
+  contact:  'Hola Elías, te escribo desde tu página de contacto. Me interesa saber más sobre tus servicios.'
   contacto: 'Hola Elías, te escribo desde tu página de contacto. Me interesa saber más sobre tus servicios.'
   footer:   'Hola Elías, te escribo desde tu web. Me gustaría más información.'
 
@@ -48,18 +51,19 @@ redes:
   credly:   credly.com/users/eliasjurado
 
 # ── Navegación principal ─────────────────────────────────────────────────────
+# Rutas en inglés desde mayo 2026. Etiquetas visibles siguen en español.
 nav:
   - { label: Inicio,     url: /              }
-  - { label: Servicios,  url: /servicios/    }
-  - { label: Portafolio, url: /portafolio/   }
-  - { label: Sobre mí,   url: /sobre-mi/     }
-  - { label: Contacto,   url: /contacto/     }
+  - { label: Servicios,  url: /services/     }
+  - { label: Portafolio, url: /portfolio/    }
+  - { label: Sobre mí,   url: /about/        }
+  - { label: Contacto,   url: /contact/      }
 
 # ── Collections (Jekyll trata cada carpeta como un mini-CMS) ─────────────────
 collections:
   proyectos:
     output: true
-    permalink: /portafolio/:slug/
+    permalink: /portfolio/:slug/
   servicios:
     output: false  # los servicios viven en _data/servicios.yml por ahora
 

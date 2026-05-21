@@ -1,46 +1,54 @@
-# Servicios — usados en home (cards esquemáticas) y página /servicios (detalle).
-# Cada entrada tiene:
-#   - nombre_corto: una palabra para branding (Web, Tienda, Flujo)
-#   - titulo: nombre completo para SEO y precisión (Diseño y desarrollo web...)
-#   - beneficio: frase emocional de gancho (lo que el cliente recibe)
-#   - resumen: descripción breve para la card del home
-#   - detalle: desarrollo completo para la página /servicios
+# Servicios — los tres niveles del Mapa de Madurez Digital de la PYME.
+# Cada nivel resuelve un dolor distinto y tiene un factor humano principal.
 
-- slug: web
-  icon: "🌐"
-  nombre_corto: Web
+- slug: landing
+  icon: "🚀"
+  nombre_corto: Landing
   titulo: Diseño y desarrollo web
+  factor_humano: Audiencia
+  meta: Visibilidad, alcance y captación de interés
   beneficio: Tu negocio visible y profesional
   resumen: >-
     Sitios rápidos, mobile-first y SEO-ready. Desde landings hasta sitios
     institucionales con blog y panel de contenidos.
   detalle: >-
-    Trabajo con Next.js, Jekyll o WordPress según lo que mejor le sirva
-    al cliente. Hosting incluido en el Plan Cuidado, deploy automático
-    y dominio profesional configurado.
+    Sitios rápidos, arquitectura mobile-first, optimización SEO-ready
+    para aparecer en buscadores, páginas de aterrizaje específicas,
+    blogs y paneles de administración de contenido. Stack moderno
+    (Next.js, Jekyll o WordPress según corresponda), hosting incluido
+    en el Plan Cuidado, deploy automático y dominio profesional.
 
 - slug: ecommerce
   icon: "🛒"
-  nombre_corto: Tienda
+  nombre_corto: E-commerce
   titulo: E-commerce con IA
+  factor_humano: Clientes
+  meta: Conversión, monetización automática y facturación 24/7
   beneficio: Vende cuando no estás
   resumen: >-
-    Tiendas en línea con catálogo dinámico, checkout por WhatsApp o pasarela
-    de pagos, panel de administración y reportes.
+    Tiendas en línea con catálogo dinámico, checkout simplificado por
+    WhatsApp o pasarelas de pago, panel de administración y reportes.
   detalle: >-
-    Stack Next.js + Supabase + Vercel. Integro chatbot de IA para responder
-    consultas de productos, gestiono pedidos y notificaciones automáticas.
-    Migración desde tiendas existentes incluida.
+    Tiendas en línea con catálogo dinámico inteligente, procesos de
+    checkout simplificados por WhatsApp, pasarelas de pago integradas
+    (tarjetas, billeteras digitales) y paneles de reportes. Stack
+    Next.js + Supabase + Vercel. Integro chatbot de IA para responder
+    consultas de productos y gestionar pedidos. Migración desde tiendas
+    existentes incluida.
 
-- slug: automatizacion
+- slug: crm
   icon: "⚙️"
-  nombre_corto: Flujo
-  titulo: Automatización para pymes
+  nombre_corto: CRM
+  titulo: Automatización y CRM para pymes
+  factor_humano: Usuarios (equipo interno)
+  meta: Eficiencia operativa, cero errores humanos y escalabilidad
   beneficio: Recupera el tiempo de tu equipo
   resumen: >-
-    Conecto los sistemas que ya usas (Excel, formularios, WhatsApp, contabilidad)
-    para que tu equipo deje de copiar y pegar.
+    Conecto los sistemas que ya usas (Excel, formularios, WhatsApp,
+    contabilidad) para que tu equipo deje de copiar y pegar.
   detalle: >-
-    Análisis del flujo actual, propuesta de automatización con herramientas
-    no invasivas (n8n, Make, scripts a medida), capacitación al equipo
-    y soporte mensual.
+    Análisis del flujo actual, propuesta de automatización con
+    herramientas no invasivas (n8n, Make, scripts a medida),
+    integración inteligente de sistemas existentes, capacitación
+    al equipo y soporte mensual. Diseñado para liberar tiempo del
+    equipo cuando el e-commerce desborda la capacidad manual.

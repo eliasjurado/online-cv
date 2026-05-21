@@ -64,15 +64,30 @@
   text-wrap: pretty;
 }
 .hero__avatar {
-  width: 180px;
-  height: 180px;
-  border-radius: 18%;          // mismo % que el favicon — se ve consistente en cualquier tamaño
-  border: 3px solid $brand-primary-line;
-  padding: 6px;
-  background: $bg;
-  box-shadow: $shadow;
-  object-fit: contain;          // el logo se ve completo, no se recorta
-  @media (min-width: $bp-md) { width: 220px; height: 220px; }
+  // Líneas rectas — sin borde, sin background, sin shadow. El logo se presenta limpio y grande.
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > img,
+  & > svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  @media (min-width: $bp-md) { width: 420px; height: 420px; }
+}
+
+// Header brand monograma — el <img> con SVG nativo de Miki
+.site-header__brand img.brand-monograma {
+  width: auto;
+  height: 52px;
+  border: none;
+  background: transparent;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 // ── Card base — de servicio, proyecto, etc. ─────────────────────────────────
@@ -178,9 +193,13 @@
 .site-header__brand {
   display: flex; align-items: center; gap: $s-3;
   text-decoration: none; color: $brand-primary;
-  font-family: $font-serif; font-size: 1.15rem; font-weight: 700;
+  font-family: $font-sans; font-size: 1.15rem; font-weight: 700;
   letter-spacing: -0.01em;
-  img { width: 36px; height: 36px; border-radius: 18%; border: 1.5px solid $brand-primary-line; object-fit: contain; }
+  // Logo legacy PNG — fallback si alguna versión vieja del header lo usa.
+  img { width: 36px; height: 36px; border: 1.5px solid $brand-primary-line; object-fit: contain; }
+  // Monograma SVG inline — versión luxury black actual.
+  .brand-monograma { color: $brand-primary; height: 34px; width: auto; flex-shrink: 0; }
+  &:hover .brand-monograma { color: $ink-pure; }
 }
 .site-nav {
   display: none;

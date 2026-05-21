@@ -1,6 +1,6 @@
 ---
 title: Portafolio
-permalink: /portafolio/
+permalink: /portfolio/
 kicker: Casos
 subtitle: Selección de proyectos en los que trabajo o trabajé. Más casos próximamente.
 ---
@@ -27,4 +27,4 @@ subtitle: Selección de proyectos en los que trabajo o trabajé. Más casos pró
 
 ---
 
-¿Necesitas referencias específicas de tu industria? <a href="/contacto/">Cuéntame qué buscas</a> y te paso los casos más cercanos a lo que necesitas.
+¿Necesitas referencias específicas de tu industria? <a href="/contact/">Cuéntame qué buscas</a> y te paso los casos más cercanos a lo que necesitas.

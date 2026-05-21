@@ -1,6 +1,6 @@
 ---
 title: Contacto
-permalink: /contacto/
+permalink: /contact/
 kicker: Conversemos
 subtitle: La forma más rápida de empezar es escribirme. Te respondo en menos de 24 horas en días hábiles.
 ---
