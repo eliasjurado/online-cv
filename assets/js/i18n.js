@@ -80,18 +80,25 @@
     }
 
     // 3. Patrón data-i18n-en/data-i18n-es para contenido dinámico desde YAML bilingüe
-    var bilingueNodes = document.querySelectorAll('[data-i18n-en]');
+    //    Soporta dos variantes:
+    //    - data-i18n-en       → reemplaza con textContent (texto plano, escape automático)
+    //    - data-i18n-en-html  → reemplaza con innerHTML  (permite <strong>, <a>, etc.)
+    var bilingueNodes = document.querySelectorAll('[data-i18n-en], [data-i18n-en-html]');
     for (var b = 0; b < bilingueNodes.length; b++) {
       var node = bilingueNodes[b];
-      // Guardar el texto ES original la primera vez
-      if (!node.hasAttribute('data-i18n-es')) {
-        node.setAttribute('data-i18n-es', node.textContent.trim());
+      var isHtml = node.hasAttribute('data-i18n-en-html');
+      var enAttr = isHtml ? 'data-i18n-en-html' : 'data-i18n-en';
+      var esAttr = isHtml ? 'data-i18n-es-html' : 'data-i18n-es';
+      // Guardar el original ES la primera vez
+      if (!node.hasAttribute(esAttr)) {
+        node.setAttribute(esAttr, isHtml ? node.innerHTML.trim() : node.textContent.trim());
       }
       var targetText = lang === 'en'
-        ? node.getAttribute('data-i18n-en')
-        : node.getAttribute('data-i18n-es');
+        ? node.getAttribute(enAttr)
+        : node.getAttribute(esAttr);
       if (targetText) {
-        node.textContent = targetText;
+        if (isHtml) node.innerHTML = targetText;
+        else node.textContent = targetText;
       }
     }
 

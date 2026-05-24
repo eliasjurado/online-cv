@@ -3,7 +3,7 @@
 # Para agregar uno nuevo: copiar la estructura, mantener orden cronológico de cierre.
 
 - nombre: Hanna Comida Árabe
-  industria: Gastronomía
+  industria: { es: "Gastronomía", en: "Food & Hospitality" }
   url: https://hannacomidaarabe.com
   cerrado: 2026-05
 

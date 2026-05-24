@@ -51,14 +51,14 @@ quick_win:
   precio_pen: "1,500"
   precio_referencia_usd: "1,200 – 2,500"
   precio_es_referencial: true
-  plazo: "2 a 3 semanas"
+  plazo: { es: "2 a 3 semanas", en: "2 to 3 weeks" }
   cta_label: { es: "Empezar por acá", en: "Start here" }
   cta_key: quickwin
 
 niveles:
   - slug: landing
     nivel: 1
-    fase: { es: "Despegue", en: "Takeoff" }
+    fase: { es: "Despegue", en: "Launch" }
     icon: "🚀"
     nombre_corto: { es: "Landing", en: "Landing" }
     titulo: { es: "Diseño y desarrollo web", en: "Web design and development" }
@@ -95,13 +95,13 @@ niveles:
     precio_pen: "3,000"
     precio_referencia_usd: "2,500 – 4,500"
     precio_es_referencial: true
-    plazo: "4 a 6 semanas"
+    plazo: { es: "4 a 6 semanas", en: "4 to 6 weeks" }
     cta_label: { es: "Cotizar este nivel", en: "Get a quote" }
     cta_key: nivel1
 
   - slug: ecommerce
     nivel: 2
-    fase: { es: "Expansión", en: "Growth" }
+    fase: { es: "Expansión", en: "Expansion" }
     icon: "🛒"
     nombre_corto: { es: "E-commerce", en: "E-commerce" }
     titulo: { es: "E-commerce con IA", en: "AI-powered E-commerce" }
@@ -138,13 +138,13 @@ niveles:
     precio_pen: "7,500"
     precio_referencia_usd: "5,000 – 10,000"
     precio_es_referencial: true
-    plazo: "6 a 10 semanas"
+    plazo: { es: "6 a 10 semanas", en: "6 to 10 weeks" }
     cta_label: { es: "Cotizar este nivel", en: "Get a quote" }
     cta_key: nivel2
 
   - slug: crm
     nivel: 3
-    fase: { es: "Liberación", en: "Liberation" }
+    fase: { es: "Liberación", en: "Freedom" }
     icon: "⚙️"
     nombre_corto: { es: "CRM", en: "CRM" }
     titulo: { es: "Automatización y CRM para pymes", en: "Automation and CRM for SMBs" }
@@ -182,7 +182,7 @@ niveles:
     precio_pen: "18,750"
     precio_referencia_usd: "12,000 – 30,000"
     precio_es_referencial: true
-    plazo: "10 a 16 semanas"
+    plazo: { es: "10 a 16 semanas", en: "10 to 16 weeks" }
     cta_label: { es: "Cotizar este nivel", en: "Get a quote" }
     cta_key: nivel3
 
@@ -215,7 +215,7 @@ addons:
     precio_usd: "1,500"
     precio_pen: "5,600"
     precio_es_referencial: true
-    plazo: "3 a 8 semanas"
+    plazo: { es: "3 a 8 semanas", en: "3 to 8 weeks" }
     aplica_a:
       - landing
       - ecommerce
@@ -244,7 +244,7 @@ addons:
     precio_usd: "300"
     precio_pen: "1,100"
     precio_es_referencial: true
-    plazo: "1 a 2 semanas"
+    plazo: { es: "1 a 2 semanas", en: "1 to 2 weeks" }
     aplica_a:
       - ecommerce
       - crm
@@ -262,7 +262,7 @@ addons:
         directly from your site.
     precio_usd: "400"
     precio_pen: "1,500"
-    plazo: "1 semana"
+    plazo: { es: "1 semana", en: "1 week" }
     aplica_a:
       - ecommerce
       - crm
@@ -278,9 +278,9 @@ addons:
       en: >-
         Professional domain setup (.com / .pe) with corporate email addresses
         (your-name@your-brand.com).
-    precio_usd: "100 + costo anual del dominio"
-    precio_pen: "375 + costo anual"
-    plazo: "2 días hábiles"
+    precio_usd: { es: "100 + costo anual del dominio", en: "100 + annual domain cost" }
+    precio_pen: { es: "375 + costo anual", en: "375 + annual cost" }
+    plazo: { es: "2 días hábiles", en: "2 business days" }
     aplica_a:
       - landing
       - ecommerce
@@ -297,9 +297,9 @@ addons:
       en: >-
         1-on-1 training sessions with your team beyond the hour included
         in each tier.
-    precio_usd: "50 / hora"
-    precio_pen: "190 / hora"
-    plazo: "Agendable"
+    precio_usd: { es: "50 / hora", en: "50 / hour" }
+    precio_pen: { es: "190 / hora", en: "190 / hour" }
+    plazo: { es: "Agendable", en: "On request" }
     aplica_a:
       - whatsapp
       - landing

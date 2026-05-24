@@ -92,9 +92,13 @@ Decisión tomada el 23 may 2026. Aplica a `_data/servicios.yml` y a todo el siti
 - Diccionario en `_data/i18n.yml` con estructura `key.subkey: {es: "...", en: "..."}`.
 - Script en `assets/js/i18n.js` (vanilla JS, sin dependencias).
 - Detección inicial: `localStorage.eliasjurado_lang` > `navigator.language` (es-* → ES, otro → EN) > ES default.
-- Marcar elementos traducibles con `data-i18n="grupo.clave"` (texto) o `data-i18n-attr-aria-label="grupo.clave"` (atributos).
+- Tres patrones de marcado (elegir según el caso):
+  - **`data-i18n="grupo.clave"`** — texto fijo que vive en `_data/i18n.yml`. El JS reemplaza `textContent`.
+  - **`data-i18n-en="Texto inglés"`** — texto plano inline (sin HTML). El JS reemplaza `textContent`. Útil para copy puntual largo donde una key i18n sería overhead.
+  - **`data-i18n-en-html="..<strong>texto</strong>.."`** — cuando la traducción contiene HTML (negrita, enlaces, spans). El JS reemplaza `innerHTML`. **Obligatorio cuando el texto tiene tags**, sino el HTML se ve literal como texto.
+- Atributos: `data-i18n-attr-aria-label="grupo.clave"`, `data-i18n-attr-placeholder="..."`, etc.
 - Toggle en `_includes/header.html` con clase `.lang-toggle` — dos botones ES | EN, esquinas vivas.
-- Cualquier nuevo texto comercial que se agregue al sitio debe registrarse en `i18n.yml` con ambos idiomas y marcarse con `data-i18n`.
+- Cualquier nuevo texto comercial que se agregue al sitio debe registrarse en `i18n.yml` con ambos idiomas, o marcarse con `data-i18n-en` / `data-i18n-en-html` según el caso.
 
 ## 6. Servicios — catálogo vigente
 

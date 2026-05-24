@@ -150,10 +150,25 @@ card:
   save_contact:   { es: "Guardar contacto",                           en: "Save contact"                                }
   share:          { es: "Compartir",                                  en: "Share"                                       }
 
-# ── ABOUT (textos clave, no traduce todo el contenido largo) ───────────────
+# ── ABOUT ───────────────────────────────────────────────────────────────────
 about:
-  page_kicker:    { es: "Sobre mí",                                   en: "About"                                       }
+  page_title:     { es: "Sobre mí",                                   en: "About"                                        }
+  page_kicker:    { es: "Misión y método",                            en: "Mission and method"                           }
+  page_subtitle:  { es: "Por qué hago lo que hago, cómo lo hago, y para quién.",
+                    en: "Why I do what I do, how I do it, and for whom." }
 
-# ── CONTACT ────────────────────────────────────────────────────────────────
+# ── CONTACT ─────────────────────────────────────────────────────────────────
 contact:
-  page_kicker:    { es: "Contacto",                                   en: "Contact"                                     }
+  page_title:     { es: "Contacto",                                   en: "Contact"                                      }
+  page_kicker:    { es: "Conversemos",                                en: "Let's talk"                                   }
+  page_subtitle:  { es: "La forma más rápida de empezar es escribirme. Te respondo en menos de 24 horas en días hábiles.",
+                    en: "The fastest way to start is to write to me. I reply within 24 hours on business days." }
+  name_placeholder:    { es: "Ej. María García",                      en: "e.g. María García"                            }
+  company_placeholder: { es: "Ej. Estudio Nómada",                    en: "e.g. Nómada Studio"                           }
+
+# ── PORTFOLIO ───────────────────────────────────────────────────────────────
+portfolio:
+  page_title:     { es: "Portafolio",                                 en: "Portfolio"                                    }
+  page_kicker:    { es: "Casos",                                      en: "Cases"                                        }
+  page_subtitle:  { es: "Selección de proyectos en los que trabajo o trabajé. Más casos próximamente.",
+                    en: "Selection of projects I'm working on or have worked on. More cases coming soon." }

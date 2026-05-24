@@ -3,6 +3,7 @@ title: Estrategias
 permalink: /services/
 kicker: Mapa de Madurez Digital
 subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y avanza cuando el retorno lo pida.
+i18n_prefix: services
 ---
 
 <section class="strategies-intro">
@@ -31,7 +32,7 @@ subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y 
       <p class="summary-col__resumen" data-i18n-en="{{ qw.resumen.en }}">{{ qw.resumen.es }}</p>
       <div class="summary-col__precio">
         <span class="precio-final"><span data-i18n="services.starting_at">Desde</span> USD {{ qw.precio_usd }}</span>
-        <span class="precio-plazo">{{ qw.plazo }}</span>
+        <span class="precio-plazo" data-i18n-en="{{ qw.plazo.en }}">{{ qw.plazo.es }}</span>
         <span class="precio-nota" data-i18n="services.price_note_short">*Precio referencial</span>
       </div>
       <a class="summary-col__cta summary-col__cta--inverted" href="#{{ qw.slug }}" data-scroll data-i18n="services.see_more">Ver más →</a>
@@ -49,7 +50,7 @@ subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y 
       <p class="summary-col__resumen" data-i18n-en="{{ s.resumen.en }}">{{ s.resumen.es }}</p>
       <div class="summary-col__precio">
         <span class="precio-final"><span data-i18n="services.starting_at">Desde</span> USD {{ s.precio_usd }}</span>
-        <span class="precio-plazo">{{ s.plazo }}</span>
+        <span class="precio-plazo" data-i18n-en="{{ s.plazo.en }}">{{ s.plazo.es }}</span>
         <span class="precio-nota" data-i18n="services.price_note_short">*Precio referencial</span>
       </div>
       <p class="summary-col__cuidado-mention" data-i18n="services.cuidado_mention">+ Plan Cuidado mensual desde USD 48</p>
@@ -71,7 +72,7 @@ subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y 
         <span class="potenciador-chip__icon" aria-hidden="true">{{ a.icon }}</span>
         <span class="potenciador-chip__text">
           <strong data-i18n-en="{{ a.titulo.en }}">{{ a.titulo.es }}</strong>
-          <small>{% if a.precio_es_referencial %}<span data-i18n="services.starting_at">Desde</span> {% endif %}USD {{ a.precio_usd }}</small>
+          <small>{% if a.precio_es_referencial %}<span data-i18n="services.starting_at">Desde</span> {% endif %}USD <span{% if a.precio_usd.en %} data-i18n-en="{{ a.precio_usd.en }}"{% endif %}>{{ a.precio_usd.es | default: a.precio_usd }}</span></small>
         </span>
       </a>
       {% endfor %}
@@ -158,7 +159,7 @@ subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y 
       <span class="precio-ref"><span data-i18n="services.market_ref_long">Referencia mercado</span>: USD {{ qw.precio_referencia_usd }}</span>
       <span class="precio-final"><span data-i18n="services.starting_at">Desde</span> USD {{ qw.precio_usd }}</span>
       <span class="precio-pen">≈ PEN {{ qw.precio_pen }}</span>
-      <span class="precio-plazo">{{ qw.plazo }}</span>
+      <span class="precio-plazo" data-i18n-en="{{ qw.plazo.en }}">{{ qw.plazo.es }}</span>
       <span class="precio-nota" data-i18n="services.price_note_long">*Precio referencial. La cotización final se ajusta según alcance.</span>
     </div>
     <a class="btn btn--primary" href="/contact/?strategy={{ qw.cta_key }}" data-i18n-en="{{ qw.cta_label.en }}">{{ qw.cta_label.es }}</a>
@@ -193,7 +194,7 @@ subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y 
       <span class="precio-ref"><span data-i18n="services.market_ref">Mercado</span>: USD {{ s.precio_referencia_usd }}</span>
       <span class="precio-final"><span data-i18n="services.starting_at">Desde</span> USD {{ s.precio_usd }}</span>
       <span class="precio-pen">≈ PEN {{ s.precio_pen }}</span>
-      <span class="precio-plazo">{{ s.plazo }}</span>
+      <span class="precio-plazo" data-i18n-en="{{ s.plazo.en }}">{{ s.plazo.es }}</span>
       <span class="precio-nota" data-i18n="services.price_note_long">*Precio referencial. La cotización final se ajusta según alcance.</span>
     </div>
     <a class="btn btn--outline" href="/contact/?strategy={{ s.cta_key }}" data-i18n-en="{{ s.cta_label.en }}">{{ s.cta_label.es }}</a>
@@ -225,11 +226,11 @@ subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y 
       <dl class="addon-card__meta">
         <div>
           <dt data-i18n="services.addons_investment">Inversión</dt>
-          <dd>{% if a.precio_es_referencial %}<span data-i18n="services.starting_at">Desde</span> {% endif %}USD {{ a.precio_usd }}<br><span class="pen-small">≈ PEN {{ a.precio_pen }}</span>{% if a.precio_es_referencial %}<br><span class="precio-nota precio-nota--mini" data-i18n="services.reference_short">*Referencial</span>{% endif %}</dd>
+          <dd>{% if a.precio_es_referencial %}<span data-i18n="services.starting_at">Desde</span> {% endif %}USD <span{% if a.precio_usd.en %} data-i18n-en="{{ a.precio_usd.en }}"{% endif %}>{{ a.precio_usd.es | default: a.precio_usd }}</span><br><span class="pen-small">≈ PEN <span{% if a.precio_pen.en %} data-i18n-en="{{ a.precio_pen.en }}"{% endif %}>{{ a.precio_pen.es | default: a.precio_pen }}</span></span>{% if a.precio_es_referencial %}<br><span class="precio-nota precio-nota--mini" data-i18n="services.reference_short">*Referencial</span>{% endif %}</dd>
         </div>
         <div>
           <dt data-i18n="services.addons_term">Plazo</dt>
-          <dd>{{ a.plazo }}</dd>
+          <dd data-i18n-en="{{ a.plazo.en }}">{{ a.plazo.es }}</dd>
         </div>
       </dl>
     </article>

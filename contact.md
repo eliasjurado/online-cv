@@ -3,9 +3,10 @@ title: Contacto
 permalink: /contact/
 kicker: Conversemos
 subtitle: La forma más rápida de empezar es escribirme. Te respondo en menos de 24 horas en días hábiles.
+i18n_prefix: contact
 ---
 
-## Por dónde escribirme
+## <span data-i18n-en="How to reach me">Por dónde escribirme</span>
 
 <div class="grid grid--2" style="margin-bottom: 3rem;">
   <div class="card"
@@ -16,15 +17,15 @@ subtitle: La forma más rápida de empezar es escribirme. Te respondo en menos d
     <p class="card__body">{{ site.contact.phone }}</p>
     <form class="wa-form" id="wa-contact-form" onsubmit="return false;">
       <div class="wa-form__field">
-        <label for="wa-nombre">Tu nombre</label>
-        <input id="wa-nombre" type="text" placeholder="Ej. María García" autocomplete="given-name" maxlength="80">
+        <label for="wa-nombre" data-i18n-en="Your name">Tu nombre</label>
+        <input id="wa-nombre" type="text" placeholder="Ej. María García" data-i18n-attr-placeholder="contact.name_placeholder" autocomplete="given-name" maxlength="80">
       </div>
       <div class="wa-form__field">
-        <label for="wa-empresa">Empresa o emprendimiento <span style="font-weight:400;text-transform:none;letter-spacing:0">(opcional)</span></label>
-        <input id="wa-empresa" type="text" placeholder="Ej. Estudio Nómada" autocomplete="organization" maxlength="80">
+        <label for="wa-empresa" data-i18n-en-html="Company or business <span style='font-weight:400;text-transform:none;letter-spacing:0'>(optional)</span>">Empresa o emprendimiento <span style="font-weight:400;text-transform:none;letter-spacing:0">(opcional)</span></label>
+        <input id="wa-empresa" type="text" placeholder="Ej. Estudio Nómada" data-i18n-attr-placeholder="contact.company_placeholder" autocomplete="organization" maxlength="80">
       </div>
       <div class="wa-form__submit">
-        <button type="submit" class="btn btn--primary" id="wa-open-btn" style="width:100%">
+        <button type="submit" class="btn btn--primary" id="wa-open-btn" style="width:100%" data-i18n-en="Open conversation →">
           Abrir conversación →
         </button>
       </div>
@@ -33,36 +34,22 @@ subtitle: La forma más rápida de empezar es escribirme. Te respondo en menos d
 
   <a href="mailto:{{ site.contact.email }}" class="card" style="text-decoration: none; color: inherit;">
     <div class="card__icon" aria-hidden="true">✉️</div>
-    <h3 class="card__title">Correo</h3>
+    <h3 class="card__title" data-i18n-en="Email">Correo</h3>
     <p class="card__body">{{ site.contact.email }}</p>
-    <p style="margin-top: 1rem; color: var(--brand-primary, #2b0548); font-size: 0.9rem;">Enviar correo →</p>
+    <p style="margin-top: 1rem; color: #000; font-size: 0.9rem;" data-i18n-en="Send email →">Enviar correo →</p>
   </a>
 </div>
 
-## ¿Qué pasa después de escribirme?
+## <span data-i18n-en="What happens after you write to me?">¿Qué pasa después de escribirme?</span>
 
-1. **Respondo en menos de 24 horas hábiles** con preguntas concretas para entender qué necesitas.
-2. **Coordinamos un llamado de 30 minutos** sin compromiso. Te pregunto, tú me preguntas. Si encajamos, seguimos.
-3. **Te mando una propuesta por escrito** con alcance, hitos, tiempos y costo. Vigencia 15 días.
-4. **Si firmas, arrancamos.** El primer hito se factura para asegurar el cronograma; el resto se libera contra entregas.
+1. <strong data-i18n-en="I reply within 24 business hours">Respondo en menos de 24 horas hábiles</strong> <span data-i18n-en="with concrete questions to understand what you need.">con preguntas concretas para entender qué necesitas.</span>
+2. <strong data-i18n-en="We schedule a 30-minute call">Coordinamos un llamado de 30 minutos</strong> <span data-i18n-en="with no commitment. I ask you, you ask me. If we fit, we continue.">sin compromiso. Te pregunto, tú me preguntas. Si encajamos, seguimos.</span>
+3. <strong data-i18n-en="I send you a written proposal">Te mando una propuesta por escrito</strong> <span data-i18n-en="with scope, milestones, timeline and cost. Valid for 15 days.">con alcance, hitos, tiempos y costo. Vigencia 15 días.</span>
+4. <strong data-i18n-en="If you sign, we start.">Si firmas, arrancamos.</strong> <span data-i18n-en="The first milestone is invoiced to secure the schedule; the rest is released against deliveries.">El primer hito se factura para asegurar el cronograma; el resto se libera contra entregas.</span>
 
-<!--
-COMENTADO TEMPORALMENTE — re-activar después de completar formalización SUNAT (PNN + RER).
-Cuando vuelvas a habilitar esta sección, actualiza el régimen tributario:
-- Antes decía: Recibo por Honorarios Electrónico (RHE)
-- Va a decir: Factura electrónica vía SEE-SOL bajo Régimen Especial de Renta (RER)
+## <span data-i18n-en="Location">Ubicación</span>
 
-## Datos de facturación
-
-- **Razón social:** Elías Luis Jurado Santos
-- **RUC:** {{ site.contact.ruc }}
-- **Comprobante:** Factura electrónica SUNAT (Régimen Especial de Renta)
-- **Para clientes en el exterior:** exportación de servicios, inafecta de IGV bajo Apéndice V Ley IGV
--->
-
-## Ubicación
-
-{{ site.contact.city }}. Trabajo remoto con clientes de toda LATAM.
+<p data-i18n-en="{{ site.contact.city }}. Remote work with clients across LATAM.">{{ site.contact.city }}. Trabajo remoto con clientes de toda LATAM.</p>
 
 <script>
 (function () {

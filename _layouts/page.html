@@ -4,9 +4,9 @@ layout: default
 
 <header class="page-header">
   <div class="container">
-    {%- if page.kicker -%}<p class="page-header__kicker">{{ page.kicker }}</p>{%- endif -%}
-    <h1>{{ page.title }}</h1>
-    {%- if page.subtitle -%}<p class="text-muted" style="font-size: 1.1rem; max-width: 36em;">{{ page.subtitle }}</p>{%- endif -%}
+    {%- if page.kicker -%}<p class="page-header__kicker"{% if page.i18n_prefix %} data-i18n="{{ page.i18n_prefix }}.page_kicker"{% endif %}>{{ page.kicker }}</p>{%- endif -%}
+    <h1{% if page.i18n_prefix %} data-i18n="{{ page.i18n_prefix }}.page_title"{% endif %}>{{ page.title }}</h1>
+    {%- if page.subtitle -%}<p class="text-muted"{% if page.i18n_prefix %} data-i18n="{{ page.i18n_prefix }}.page_subtitle"{% endif %} style="font-size: 1.1rem; max-width: 36em;">{{ page.subtitle }}</p>{%- endif -%}
   </div>
 </header>
 
