@@ -9,7 +9,7 @@
       </div>
 
       <div>
-        <h4>Contacto</h4>
+        <h4 data-i18n="footer.contact_label">Contacto</h4>
         <p style="font-size: 0.9rem; line-height: 1.9;">
           <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br>
           <a href="https://wa.me/{{ site.contact.whatsapp }}?text={{ site.whatsapp_messages.footer | url_encode }}" target="_blank" rel="noopener">{{ site.contact.phone }}</a><br>
@@ -19,17 +19,17 @@
       </div>
 
       <div>
-        <h4>Enlaces</h4>
+        <h4 data-i18n="footer.links_label">Enlaces</h4>
         <p style="font-size: 0.9rem; line-height: 1.9;">
           {%- for item in site.nav -%}
-            <a href="{{ item.url }}">{{ item.label }}</a><br>
+            <a href="{{ item.url }}"{% if item.i18n %} data-i18n="{{ item.i18n }}"{% endif %}>{{ item.label }}</a><br>
           {%- endfor -%}
         </p>
       </div>
     </div>
 
     <div class="site-footer__bottom">
-      <span>© {{ 'now' | date: '%Y' }} {{ site.author.name }}. Todos los derechos reservados.</span>
+      <span>© {{ 'now' | date: '%Y' }} {{ site.author.name }}. <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
       <span>
         {%- if site.redes.github %}<a href="https://github.com/{{ site.redes.github }}" target="_blank" rel="noopener">GitHub</a>{% endif -%}
         {%- if site.redes.linkedin %} · <a href="https://www.linkedin.com/in/{{ site.redes.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif -%}

@@ -67,3 +67,12 @@ small, .text-sm { font-size: 0.875rem; color: $muted; }
 
 // ── Selección ───────────────────────────────────────────────────────────────
 ::selection { background: $brand-primary; color: #fff; }
+
+// ── Constraint tipográfico interno ──────────────────────────────────────────
+// Container amplio (1080px) — protegemos legibilidad de párrafos sueltos.
+// NO afecta texto dentro de cards, grids, summary, journey ni article wrappers.
+.section > .container > p,
+.section > .container > ul:not([class]),
+.section > .container > ol:not([class]) {
+  max-width: 60ch;
+}

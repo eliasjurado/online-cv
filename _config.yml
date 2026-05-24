@@ -53,11 +53,11 @@ redes:
 # ── Navegación principal ─────────────────────────────────────────────────────
 # Rutas en inglés desde mayo 2026. Etiquetas visibles siguen en español.
 nav:
-  - { label: Inicio,     url: /              }
-  - { label: Servicios,  url: /services/     }
-  - { label: Portafolio, url: /portfolio/    }
-  - { label: Sobre mí,   url: /about/        }
-  - { label: Contacto,   url: /contact/      }
+  - { label: Inicio,       url: /,            i18n: nav.home       }
+  - { label: Estrategias,  url: /services/,   i18n: nav.strategies }
+  - { label: Portafolio,   url: /portfolio/,  i18n: nav.portfolio  }
+  - { label: Sobre mí,     url: /about/,      i18n: nav.about      }
+  - { label: Contacto,     url: /contact/,    i18n: nav.contact    }
 
 # ── Collections (Jekyll trata cada carpeta como un mini-CMS) ─────────────────
 collections:
