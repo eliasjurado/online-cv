@@ -168,6 +168,14 @@ Patrón confirmado en producción el 23 may 2026 — Opus + Sonnet + Haiku traba
 - **Las decisiones de copy comercial, naming o arquitectura las toma Opus contigo.** Los subagentes NO inventan estructura — la siguen.
 - **Si Sonnet/Haiku falla por session limit u otro,** Opus completa la tarea inline en su próxima oportunidad. No se reintenta automáticamente.
 
+## 8b. NO generar PDFs en sesión
+
+Decisión operativa del 24 may 2026: **los subagentes y Opus NO deben generar archivos PDF**. WeasyPrint y otros generadores headless no respetan el CSS de impresión del repo (paginan incorrectamente, no aplican `overflow: hidden` para limitar páginas, distorsionan fuentes y márgenes). El resultado siempre se ve peor que el HTML original.
+
+**El flujo correcto es:** Opus/Sonnet genera el HTML siguiendo el template luxury black. El usuario lo abre en Chrome y usa Cmd+P → "Guardar como PDF" (Tamaño A4, Márgenes Ninguno, Imprimir gráficos de fondo activado). Chrome respeta correctamente el CSS de impresión y paginación.
+
+El bloque `.help` (con clase `.no-print`) que vive arriba de la primera `.page` ya recuerda este flujo al usuario.
+
 ## 9. Pendientes activos del sitio (al 23 may 2026)
 
 1. Probar build local con `docker-compose up` o `jekyll serve` y validar:
