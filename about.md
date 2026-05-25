@@ -46,7 +46,16 @@ i18n_prefix: about
     .mision { padding: 3rem 3rem; }
     .mision__lead { font-size: 1.25rem; }
   }
+
+  /* Cuerpo de about con padding consistente con el strip .mision
+     para que el texto alinee visualmente con el contenido del strip negro. */
+  .about-body { padding: 0 2rem; }
+  @media (min-width: 768px) {
+    .about-body { padding: 0 3rem; }
+  }
 </style>
+
+<div class="about-body" markdown="1">
 
 ## <span data-i18n-en="Who's behind">Quién hay detrás</span>
 
@@ -118,4 +127,6 @@ i18n_prefix: about
 
 <div style="text-align: center; margin-top: 3rem;">
   <a href="/contact/" class="btn btn--primary btn--lg" data-i18n-en="Let's talk">Hablemos</a>
+</div>
+
 </div>
