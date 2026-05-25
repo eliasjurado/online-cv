@@ -6,15 +6,6 @@ subtitle: Una estrategia para cada fase del negocio. Empieza donde estés — y 
 i18n_prefix: services
 ---
 
-<section class="strategies-intro">
-  <p data-i18n="services.intro_body">
-    Toda pyme atraviesa el mismo viaje digital — solo cambia en qué punto está hoy.
-    Acá vas a encontrar <strong>tres niveles del Mapa de Madurez</strong> para construir
-    capacidad real, y un <em>Quick Win</em> transversal que activa la conversión inmediata
-    antes de invertir en lo grande.
-  </p>
-</section>
-
 <!-- ═══════════════════════════ RESUMEN COMPARATIVO (4 columnas) ═══════════════════════════ -->
 <section class="summary" aria-label="Resumen de estrategias">
   <div class="summary-grid summary-grid--four">
@@ -125,6 +116,15 @@ i18n_prefix: services
     </ol>
     <a class="metodo-ver-detalle" href="#proceso" data-scroll data-i18n="services.method_see_detail">Ver detalle del proceso ↓</a>
   </aside>
+</section>
+
+<section class="strategies-intro">
+  <p data-i18n="services.intro_body">
+    Toda pyme atraviesa el mismo viaje digital — solo cambia en qué punto está hoy.
+    Acá vas a encontrar <strong>tres niveles del Mapa de Madurez</strong> para construir
+    capacidad real, y un <em>Quick Win</em> transversal que activa la conversión inmediata
+    antes de invertir en lo grande.
+  </p>
 </section>
 
 <!-- ═══════════════════════════ DIVISOR ═══════════════════════════ -->
