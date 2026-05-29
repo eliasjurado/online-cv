@@ -127,11 +127,27 @@ Detalle completo en `~/Documents/eliasjurado.com/contexto-elias.md` sección 7b.
 
 Patrón confirmado en producción el 23 may 2026 — Opus + Sonnet + Haiku trabajando en cascada sobre este mismo repo. Conservar este patrón para todas las sesiones futuras.
 
-**División de responsabilidades:**
+**Tres roles, división estricta:**
 
-- **Opus contigo (Elías):** discovery, decisiones de marca/comerciales, planificación, redacción de briefs, validación de outputs, escritura del contexto. El error es caro acá — pensamiento de fondo.
-- **Sonnet ejecutor:** implementación de cambios ya planificados que requieren juicio acotado — refactor con criterios, marking de i18n, traducciones idiomáticas, generación de componentes desde plantilla, voseo→tuteo masivo. Recibe brief autocontenido + paths a `CLAUDE.md` y `contexto-elias.md`.
-- **Haiku watchman:** tareas puramente mecánicas sin juicio — validación sintáctica, búsqueda con grep, renombrado batch, cross-reference de listas, lint, generación desde plantilla exacta. Es ~12× más barato que Sonnet en tokens y mucho más rápido.
+- **Opus = ORQUESTADOR + PLANEADOR.** Es la sesión que habla con Elías. Hace discovery, toma decisiones de marca/comercial/arquitectura/copy, arma el plan, redacta los briefs para Sonnet y Haiku, sintetiza outputs. El error cognitivo es caro acá.
+
+- **Sonnet = EJECUTADOR.** Recibe brief autocontenido de Opus (paths absolutos, deliverable claro, alcance acotado). Ejecuta el cambio: refactor con criterios, marking masivo de i18n, traducciones idiomáticas, generación de componentes desde plantilla, voseo→tuteo masivo, generación de propuestas desde template. Reporta diff + observaciones ≤250 palabras. NO decide arquitectura ni copy — sigue el plan.
+
+- **Haiku = REVISOR.** Recibe el output de Sonnet (o un cambio que Opus quiere validar antes del siguiente paso). Verifica mecánicamente: estructura YAML/JSON, referencias rotas, voseo, alineación con CLAUDE.md, completitud. Reporta lista de problemas concretos o "todo OK". NO modifica nada — solo verifica. Es ~12× más barato y rápido que Sonnet.
+
+**Flujo estándar:**
+
+```
+Opus discute con Elías
+   ↓ plan
+Opus → brief autocontenido → Sonnet ejecuta → reporta diff
+   ↓
+Opus → brief de validación → Haiku revisa → reporta OK / problemas
+   ↓
+Opus sintetiza al user (todo OK / hay que iterar)
+```
+
+Si Haiku encuentra problemas, Opus arma fix-brief y delega a Sonnet de nuevo. Haiku revalida. Repetir hasta "todo OK". Este loop es barato y seguro.
 
 **Cómo invocarlos:** desde una sesión con Opus, usar la `Agent` tool con `subagent_type: "general-purpose"` y `model: "sonnet"` o `"haiku"`. El prompt al subagente debe:
 
