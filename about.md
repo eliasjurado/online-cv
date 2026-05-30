@@ -125,8 +125,125 @@ i18n_prefix: about
 
 <p data-i18n-en="Robust but adaptable stack. If your business needs something different, we evaluate it in the initial diagnosis.">Stack robusto pero adaptable. Si tu negocio necesita algo distinto, lo evaluamos en el diagnóstico inicial.</p>
 
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="/contact/" class="btn btn--primary btn--lg" data-i18n-en="Let's talk">Hablemos</a>
 </div>
 
+{% comment %}
+============================================================================
+SECCIÓN RSE — LISTA PERO OCULTA (no se renderiza mientras esté en este bloque).
+Activar cuando exista el primer proyecto real de impacto social (p. ej. el
+colegio de los hijos de Elías u otra causa). Para publicar: eliminar la línea
+del tag de apertura de comentario Liquid (justo arriba de <section class="rse">)
+y la del tag de cierre (justo debajo de </style>, antes del CTA). Antes de
+publicar, reemplazar el placeholder de casos por el caso real. Nota de copy:
+NO usar "pro bono" (jerga) — el copy dice "elijo una causa que me mueve / sin
+cobrar / sin costo", tono directo y de decisión personal.
+============================================================================
+
+<section class="rse">
+  <p class="rse__kicker" data-i18n-en="Social responsibility">Responsabilidad social</p>
+  <h2 class="rse__title" data-i18n-en="Digital maturity isn't only for those who can pay for it">La madurez digital no es solo para quien puede pagarla</h2>
+  <p class="rse__lead" data-i18n-en-html="Every so often I <strong>choose a cause that moves me</strong> and support it at no charge — the same Digital Maturity Map I use with businesses, put to work for something worth it. Same method, same standard, no cost.">
+    Cada cierto tiempo <strong>elijo una causa que me mueve</strong> y la acompaño sin cobrar —el mismo
+    Mapa de Madurez Digital que uso con las empresas, puesto al servicio de algo que vale la pena.
+    El mismo método, el mismo estándar, sin costo.
+  </p>
+</section>
+
+<div class="rse-pilares">
+  <div class="rse-pilar">
+    <h3 data-i18n-en="Who I support">A quién acompaño</h3>
+    <p data-i18n-en="Non-profits, social ventures and community initiatives with real impact and a limited budget.">Organizaciones sin fines de lucro, emprendimientos sociales e iniciativas comunitarias con impacto real y presupuesto acotado.</p>
+  </div>
+  <div class="rse-pilar">
+    <h3 data-i18n-en="What I contribute">Qué aporto</h3>
+    <p data-i18n-en="Web presence, e-commerce or automation — the same Digital Maturity Map, applied to their cause so their team spends less time on operations and more on their mission.">Presencia web, e-commerce o automatización —el mismo Mapa de Madurez Digital, aplicado a su causa para que su equipo dedique menos tiempo a operar y más a su misión.</p>
+  </div>
+  <div class="rse-pilar">
+    <h3 data-i18n-en="Why">Por qué</h3>
+    <p data-i18n-en="Technology multiplies the reach of those already doing good. Sharing it where it's needed most is part of how I understand my profession.">La tecnología multiplica el alcance de quienes ya hacen el bien. Compartirla donde más se necesita es parte de cómo entiendo mi profesión.</p>
+  </div>
+</div>
+
+<!-- PLACEHOLDER: reemplazar por casos reales de RSE cuando existan.
+     Mantener formato sobrio, sin cifras inventadas. Ejemplo de estructura:
+<p class="rse-casos-intro" data-i18n-en="Some of the organizations I've supported:">Algunas de las organizaciones que he acompañado:</p>
+<ul>
+  <li><strong>Nombre de la organización</strong> — qué se construyó y qué resultado tuvo.</li>
+</ul>
+-->
+
+<p class="rse-cta-line" data-i18n-en-html="Run a cause that's worth it and need a digital hand? <a href='/contact/'>Tell me about it</a> — every so often I choose one to support at no charge.">¿Tienes una causa que vale la pena y necesitas una mano digital? <a href="/contact/">Cuéntame</a> —cada cierto tiempo elijo una para acompañar sin cobrar.</p>
+
+<style>
+  .rse {
+    background: #000;
+    color: #ffffff;
+    padding: 2.5rem 2rem;
+    margin: 3rem 0 0;
+  }
+  .rse__kicker {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #d2d2d7;
+    margin: 0 0 0.75rem;
+  }
+  .rse__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 1.25rem;
+    color: #ffffff;
+  }
+  .rse__lead {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+    color: #f5f5f7;
+    text-wrap: pretty;
+  }
+  .rse__lead strong { color: #ffffff; font-weight: 700; }
+
+  .rse-pilares {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    margin: 0 0 2rem;
+  }
+  .rse-pilar {
+    background: #f5f5f7;
+    padding: 1.5rem;
+  }
+  .rse-pilar h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  .rse-pilar p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #606060;
+  }
+  .rse-cta-line {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #243038;
+  }
+  .rse-cta-line a { color: #000; font-weight: 600; }
+
+  @media (min-width: 768px) {
+    .rse { padding: 3rem 3rem; }
+    .rse__title { font-size: 1.85rem; }
+    .rse-pilares { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+{% endcomment %}
+
+<div style="text-align: center; margin-top: 3rem;">
+  <a href="/contact/" class="btn btn--primary btn--lg" data-i18n-en="Let's talk">Hablemos</a>
 </div>
