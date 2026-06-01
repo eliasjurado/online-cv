@@ -125,6 +125,12 @@ i18n_prefix: about
 
 <p data-i18n-en="Robust but adaptable stack. If your business needs something different, we evaluate it in the initial diagnosis.">Stack robusto pero adaptable. Si tu negocio necesita algo distinto, lo evaluamos en el diagnóstico inicial.</p>
 
+## <span data-i18n-en="Billing — formal receipts">Facturación — comprobantes formales</span>
+
+<p data-i18n-en-html="I work formally and on the books. For every service I issue an <strong>electronic receipt</strong> through SUNAT: an <strong>electronic invoice (factura)</strong> if your business has a RUC — so you can use it as a deductible expense and tax credit — or an <strong>electronic sales slip (boleta)</strong> if you're a final consumer.">Trabajo de manera formal y en regla. Por cada servicio emito un <strong>comprobante electrónico</strong> ante SUNAT: <strong>factura electrónica</strong> si tu negocio tiene RUC —para que la uses como gasto deducible y crédito fiscal— o <strong>boleta de venta electrónica</strong> si eres consumidor final.</p>
+
+<p data-i18n-en-html="My RUC is <strong>10434645421</strong>. If you need the invoice with specific tax details, just send them to me when we close the agreement.">Mi RUC es <strong>10434645421</strong>. Si necesitas la factura con datos tributarios específicos, me los pasas al cerrar el acuerdo.</p>
+
 </div>
 
 {% comment %}
