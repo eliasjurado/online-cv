@@ -11,6 +11,7 @@ Este directorio centraliza las especificaciones vivas del sitio.
 5. 04-roadmap-improvements.md
 6. 05-qa-smoke-checklist.md
 7. 06-ga4-debugview-setup.md
+8. 07-card-v2-proposal.md
 
 ## Regla de mantenimiento
 
