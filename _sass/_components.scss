@@ -330,6 +330,15 @@
   a { color: #fff; }
   h4 { color: #fff; font-size: 0.95rem; margin-bottom: $s-3; }
 }
+.site-footer__description {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  max-width: 32em;
+}
+.site-footer__list {
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
 .site-footer__grid {
   display: grid; gap: $s-6;
   @media (min-width: $bp-md) { grid-template-columns: 2fr 1fr 1fr; }

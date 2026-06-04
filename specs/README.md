@@ -9,6 +9,7 @@ Este directorio centraliza las especificaciones vivas del sitio.
 3. 02-design-and-ui-spec.md
 4. 03-technical-spec.md
 5. 04-roadmap-improvements.md
+6. 05-qa-smoke-checklist.md
 
 ## Regla de mantenimiento
 

@@ -22,9 +22,9 @@ hero_subtitle: "Visibilidad → Conversión → Eficiencia"
 </section>
 
 {%- if site.data.clientes.size > 0 -%}
-<section class="section" style="padding-block: 2.5rem;" aria-label="Empresas que confiaron en mi trabajo">
+<section class="section trusted-strip" aria-label="Empresas que confiaron en mi trabajo">
   <div class="container">
-    <p class="page-header__kicker" style="text-align: center; margin-bottom: 1.5rem;" data-i18n-en="Trusted in this work">Confiaron en este trabajo</p>
+    <p class="page-header__kicker trusted-strip__kicker" data-i18n-en="Trusted in this work">Confiaron en este trabajo</p>
     <div class="clientes-wordmarks">
       {%- for c in site.data.clientes -%}
         {%- if c.url -%}
@@ -47,7 +47,7 @@ hero_subtitle: "Visibilidad → Conversión → Eficiencia"
 {%- assign qw = site.data.servicios.quick_win -%}
 <section class="section maturity-journey">
   <div class="container">
-    <header style="text-align: center; max-width: 38em; margin: 0 auto 3rem;">
+    <header class="maturity-journey__header">
       <p class="page-header__kicker" data-i18n="home.levels_kicker">Mapa de Madurez Digital</p>
       <h2 data-i18n="home.journey_title">Tu recorrido, paso a paso</h2>
       <p class="text-muted" data-i18n="home.journey_body">Cuatro estaciones del camino digital de tu negocio. Empieza donde estés. Avanza cuando el retorno lo pida.</p>
@@ -82,13 +82,31 @@ hero_subtitle: "Visibilidad → Conversión → Eficiencia"
       {%- endfor -%}
     </ol>
 
-    <div style="text-align: center; margin-top: 2.5rem;">
+    <div class="maturity-journey__cta-wrap">
       <a href="/services/" class="btn btn--ghost" data-i18n="home.levels_cta">Ver pricing completo + add-ons →</a>
     </div>
   </div>
 </section>
 
 <style>
+  .trusted-strip {
+    padding-block: 2.5rem;
+  }
+  .trusted-strip__kicker {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .maturity-journey__header {
+    text-align: center;
+    max-width: 38em;
+    margin: 0 auto 3rem;
+  }
+  .maturity-journey__cta-wrap {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
   .journey {
     list-style: none;
     padding: 0;
@@ -185,7 +203,7 @@ hero_subtitle: "Visibilidad → Conversión → Eficiencia"
 {%- if destacados.size > 0 -%}
 <section class="section section--soft">
   <div class="container">
-    <div style="text-align: center; max-width: 36em; margin: 0 auto 3rem;">
+    <div class="home-featured__header">
       <p class="page-header__kicker" data-i18n-en="Portfolio">Portafolio</p>
       <h2 data-i18n-en="Recent cases">Casos recientes</h2>
     </div>
@@ -193,12 +211,12 @@ hero_subtitle: "Visibilidad → Conversión → Eficiencia"
       {%- for p in destacados limit: 2 -%}
         <article class="card">
           <h3 class="card__title"{% if p.title_en %} data-i18n-en="{{ p.title_en }}"{% endif %}>{{ p.title }}</h3>
-          {%- if p.cliente or p.industria -%}<p class="text-sm" style="margin-bottom: 0.5rem;">{{ p.cliente }}{% if p.industria %} · <span data-i18n-en="{{ p.industria_en | default: p.industria }}">{{ p.industria }}</span>{% endif %}</p>{%- endif -%}
+          {%- if p.cliente or p.industria -%}<p class="text-sm home-featured__meta">{{ p.cliente }}{% if p.industria %} · <span data-i18n-en="{{ p.industria_en | default: p.industria }}">{{ p.industria }}</span>{% endif %}</p>{%- endif -%}
           <p class="card__body"{% if p.resumen_en %} data-i18n-en="{{ p.resumen_en }}"{% endif %}>{{ p.resumen }}</p>
-          <p style="margin-top: 1.25rem; display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center;">
-            <a href="{{ p.url }}" style="color: {{ site.brand.primary }}; font-size: 0.9rem; text-decoration: none;" data-i18n-en="See case →">Ver caso →</a>
+          <p class="home-featured__actions">
+            <a href="{{ p.url }}" class="home-featured__link" data-i18n-en="See case →">Ver caso →</a>
             {%- if p.url_vivo -%}
-              <a href="{{ p.url_vivo }}" target="_blank" rel="noopener" style="color: {{ site.brand.accent }}; font-size: 0.9rem; text-decoration: none;" data-i18n-en="See live site ↗">Ver sitio en vivo ↗</a>
+              <a href="{{ p.url_vivo }}" target="_blank" rel="noopener" class="home-featured__link home-featured__link--alt" data-i18n-en="See live site ↗">Ver sitio en vivo ↗</a>
             {%- endif -%}
           </p>
         </article>
@@ -211,7 +229,7 @@ hero_subtitle: "Visibilidad → Conversión → Eficiencia"
 <section class="section">
   <div class="container container-narrow text-center">
     <h2 data-i18n="home.closing_title">¿Tu negocio necesita escalar?</h2>
-    <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 2rem;" data-i18n="home.closing_body">
+    <p class="text-muted home-closing__body" data-i18n="home.closing_body">
       Conversemos sin compromiso. Te respondo en menos de 24 horas en días hábiles.
     </p>
     <a href="https://wa.me/{{ site.contact.whatsapp }}?text={{ site.whatsapp_messages.hero | url_encode }}" target="_blank" rel="noopener" class="btn btn--accent btn--lg" data-i18n="home.closing_cta">
@@ -219,3 +237,41 @@ hero_subtitle: "Visibilidad → Conversión → Eficiencia"
     </a>
   </div>
 </section>
+
+<style>
+  .home-featured__header {
+    text-align: center;
+    max-width: 36em;
+    margin: 0 auto 3rem;
+  }
+  .home-featured__meta {
+    margin-bottom: 0.5rem;
+  }
+  .home-featured__actions {
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .home-featured__link {
+    color: {{ site.brand.primary }};
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .home-featured__link--alt {
+    color: {{ site.brand.accent }};
+  }
+  .home-closing__body {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 767px) {
+    .home-featured__actions {
+      justify-content: center;
+      text-align: center;
+      gap: 0.8rem;
+    }
+  }
+</style>

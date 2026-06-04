@@ -3,14 +3,14 @@
     <div class="site-footer__grid">
       <div>
         <h4>{{ site.title }}</h4>
-        <p style="color: rgba(255,255,255,0.75); font-size: 0.95rem; max-width: 32em;">
+        <p class="site-footer__description">
           {{ site.description }}
         </p>
       </div>
 
       <div>
         <h4 data-i18n="footer.contact_label">Contacto</h4>
-        <p style="font-size: 0.9rem; line-height: 1.9;">
+        <p class="site-footer__list">
           <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br>
           <a href="https://wa.me/{{ site.contact.whatsapp }}?text={{ site.whatsapp_messages.footer | url_encode }}" target="_blank" rel="noopener">{{ site.contact.phone }}</a><br>
           {{ site.contact.city }}<br>
@@ -20,7 +20,7 @@
 
       <div>
         <h4 data-i18n="footer.links_label">Enlaces</h4>
-        <p style="font-size: 0.9rem; line-height: 1.9;">
+        <p class="site-footer__list">
           {%- for item in site.nav -%}
             <a href="{{ item.url }}"{% if item.i18n %} data-i18n="{{ item.i18n }}"{% endif %}>{{ item.label }}</a><br>
           {%- endfor -%}
@@ -61,6 +61,12 @@
     document.addEventListener('click', function(event) {
       if (!menu.classList.contains('is-open')) return;
       if (menu.contains(event.target) || btn.contains(event.target)) return;
+      closeMenu();
+    });
+
+    menu.addEventListener('click', function(event) {
+      var link = event.target.closest('a');
+      if (!link) return;
       closeMenu();
     });
   })();
