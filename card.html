@@ -227,12 +227,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <footer class="foot">
-    {{ site.contact.city }} · RUC {{ site.contact.ruc }}<br>
+    {{ site.contact.city }} · <span data-i18n="card.tax_id_label">RUC</span> {{ site.contact.ruc }}<br>
     <a href="{{ site.url }}">{{ site.url | replace: 'https://', '' | replace: 'http://', '' }}</a>
   </footer>
 </main>
 
 <script>
+function i18nLookup(key, fallback) {
+  if (window.eliasI18n && typeof window.eliasI18n.lookup === 'function') {
+    var lang = (typeof window.eliasI18n.getLang === 'function' && window.eliasI18n.getLang())
+      || document.documentElement.getAttribute('lang')
+      || 'es';
+    var val = window.eliasI18n.lookup(key, lang);
+    if (val) return val;
+  }
+  return fallback;
+}
+
 function downloadVCard() {
   const contactName = {{ site.author.name | jsonify }};
   const contactPhone = {{ phone_e164 | jsonify }};
@@ -263,8 +274,8 @@ function downloadVCard() {
 }
 async function shareCard() {
   const data = {
-    title: {{ site.title | jsonify }},
-    text: "Landing · E-commerce · CRM",
+    title: i18nLookup('card.share_title', {{ site.title | jsonify }}),
+    text: i18nLookup('card.share_text', 'Landing · E-commerce · CRM'),
     url: location.href
   };
   if (navigator.share) {
@@ -272,9 +283,9 @@ async function shareCard() {
   } else {
     try {
       await navigator.clipboard.writeText(location.href);
-      alert("Enlace copiado al portapapeles.");
+      alert(i18nLookup('card.link_copied', 'Enlace copiado al portapapeles.'));
     } catch {
-      prompt("Copia este enlace:", location.href);
+      prompt(i18nLookup('card.copy_link_prompt', 'Copia este enlace:'), location.href);
     }
   }
 }

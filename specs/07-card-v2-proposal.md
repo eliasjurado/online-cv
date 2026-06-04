@@ -149,3 +149,4 @@ Implementado en [card.html](card.html):
 - Fase 3:
   - i18n real activado en /card/ mediante `i18n-data` + `i18n.js`.
   - Conservado el esquema `data-i18n="card.*"` existente.
+  - Mensajes de compartir/copiado y etiqueta fiscal del footer localizados ES/EN.

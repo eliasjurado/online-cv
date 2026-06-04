@@ -149,6 +149,11 @@ card:
   website_label:  { es: "Sitio web",                                  en: "Website"                                     }
   save_contact:   { es: "Guardar contacto",                           en: "Save contact"                                }
   share:          { es: "Compartir",                                  en: "Share"                                       }
+  tax_id_label:   { es: "RUC",                                        en: "Tax ID"                                      }
+  share_title:    { es: "Elías Jurado",                               en: "Elias Jurado"                                }
+  share_text:     { es: "Landing · E-commerce · CRM",                 en: "Landing · E-commerce · CRM"                  }
+  link_copied:    { es: "Enlace copiado al portapapeles.",            en: "Link copied to clipboard."                   }
+  copy_link_prompt: { es: "Copia este enlace:",                       en: "Copy this link:"                             }
 
 # ── ABOUT ───────────────────────────────────────────────────────────────────
 about:
