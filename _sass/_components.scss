@@ -372,6 +372,14 @@
   color: $brand-accent; font-weight: 600; margin-bottom: $s-2;
 }
 
+.proyecto__resumen {
+  font-size: 1.1rem;
+}
+
+.proyecto__back {
+  margin-top: 3rem;
+}
+
 // ── Formulario WhatsApp (tarjeta de contacto) ────────────────────────────────
 .wa-form {
   display: flex;

@@ -11,20 +11,22 @@ Fecha: 2026-06-04
 
 ## P0 (proximo sprint)
 
+Estado: completado (2026-06-04)
+
 1. Migrar estilos inline criticos a clases reutilizables.
-- Alcance inicial: home, services, footer.
+- Alcance ejecutado: home, footer, about, portfolio, contact, proyecto.
 - Impacto: consistencia, mantenibilidad, menos regresiones.
 
 2. Cierre de menu al seleccionar enlace mobile.
-- Hoy se cierra por tap fuera; falta cierre explicito al navegar.
+- Ejecutado junto a cierre por tap fuera.
 - Impacto: UX mas fluida.
 
 3. Actualizar README del repo.
-- Reemplazar referencia al theme original por documentacion real del proyecto.
+- Ejecutado con stack, estructura y flujo real del repositorio.
 - Impacto: onboarding tecnico rapido y menos confusiones.
 
 4. QA checklist formal por viewport.
-- Definir protocolo corto de smoke test responsive/i18n antes de merge.
+- Ejecutado en specs/05-qa-smoke-checklist.md.
 
 ## P1
 

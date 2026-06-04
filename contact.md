@@ -21,7 +21,7 @@ i18n_prefix: contact
         <input id="wa-nombre" type="text" placeholder="Ej. María García" data-i18n-attr-placeholder="contact.name_placeholder" autocomplete="given-name" maxlength="80">
       </div>
       <div class="wa-form__field">
-        <label for="wa-empresa" data-i18n-en-html="Company or business <span style='font-weight:400;text-transform:none;letter-spacing:0'>(optional)</span>">Empresa o emprendimiento <span style="font-weight:400;text-transform:none;letter-spacing:0">(opcional)</span></label>
+        <label for="wa-empresa" data-i18n-en-html="Company or business <span class='contact-optional'>(optional)</span>">Empresa o emprendimiento <span class="contact-optional">(opcional)</span></label>
         <input id="wa-empresa" type="text" placeholder="Ej. Estudio Nómada" data-i18n-attr-placeholder="contact.company_placeholder" autocomplete="organization" maxlength="80">
       </div>
       <div class="wa-form__submit">
@@ -95,6 +95,12 @@ i18n_prefix: contact
     margin-top: 1rem;
     color: #000;
     font-size: 0.9rem;
+  }
+
+  .contact-optional {
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
   }
 
   @media (max-width: 767px) {

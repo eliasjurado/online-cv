@@ -40,10 +40,12 @@ Durante esta iteracion se corrigieron problemas de experiencia mobile:
 - i18n toggle enlazado a todos los toggles desktop/mobile.
 - Ajuste de breakpoint del toggle de idioma.
 - Alineacion/ritmo del menu mobile.
-- Cierre de menu al hacer tap fuera.
+- Cierre de menu al hacer tap fuera y al tocar un enlace.
 - Hero mobile: logo protagonista, orden visual corregido, centrado de contenido y CTAs.
-- Refactor de estilos inline a clases en about/portfolio/contact.
+- Refactor de estilos inline a clases en home/footer/about/portfolio/contact/proyecto.
 - Header de paginas internas estandarizado con clases reutilizables.
+- README actualizado al estado real del proyecto.
+- Checklist QA smoke documentado para pre-merge.
 
 ## Criterios para no repetir estos problemas
 

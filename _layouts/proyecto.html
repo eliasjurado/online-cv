@@ -6,7 +6,7 @@ layout: default
   <div class="container container-narrow">
     <p class="page-header__kicker">Caso de estudio</p>
     <h1>{{ page.title }}</h1>
-    {%- if page.resumen -%}<p class="text-muted" style="font-size: 1.1rem;">{{ page.resumen }}</p>{%- endif -%}
+    {%- if page.resumen -%}<p class="text-muted proyecto__resumen">{{ page.resumen }}</p>{%- endif -%}
   </div>
 </header>
 
@@ -23,6 +23,6 @@ layout: default
 
     {{ content }}
 
-    <p style="margin-top: 3rem;"><a href="/portfolio/" class="btn btn--ghost">← Volver al portafolio</a></p>
+    <p class="proyecto__back"><a href="/portfolio/" class="btn btn--ghost">← Volver al portafolio</a></p>
   </div>
 </article>
