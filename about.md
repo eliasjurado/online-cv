@@ -252,6 +252,17 @@ cobrar / sin costo", tono directo y de decisión personal.
 </style>
 {% endcomment %}
 
-<div style="text-align: center; margin-top: 3rem;">
+<div class="about-cta">
   <a href="/contact/" class="btn btn--primary btn--lg" data-i18n-en="Let's talk">Hablemos</a>
 </div>
+
+<style>
+  .about-cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 767px) {
+    .about-cta { margin-top: 2.5rem; }
+  }
+</style>

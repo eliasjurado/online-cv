@@ -8,7 +8,7 @@ i18n_prefix: contact
 
 ## <span data-i18n-en="How to reach me">Por dónde escribirme</span>
 
-<div class="grid grid--2" style="margin-bottom: 3rem;">
+<div class="grid grid--2 contact-grid">
   <div class="card"
        data-wa-number="{{ site.contact.whatsapp }}"
        data-wa-base="{{ site.whatsapp_messages.contacto }}">
@@ -25,18 +25,18 @@ i18n_prefix: contact
         <input id="wa-empresa" type="text" placeholder="Ej. Estudio Nómada" data-i18n-attr-placeholder="contact.company_placeholder" autocomplete="organization" maxlength="80">
       </div>
       <div class="wa-form__submit">
-        <button type="submit" class="btn btn--primary" id="wa-open-btn" style="width:100%" data-i18n-en="Open conversation →">
+        <button type="submit" class="btn btn--primary contact-wa-btn" id="wa-open-btn" data-i18n-en="Open conversation →">
           Abrir conversación →
         </button>
       </div>
     </form>
   </div>
 
-  <a href="mailto:{{ site.contact.email }}" class="card" style="text-decoration: none; color: inherit;">
+  <a href="mailto:{{ site.contact.email }}" class="card contact-email-card">
     <div class="card__icon" aria-hidden="true">✉️</div>
     <h3 class="card__title" data-i18n-en="Email">Correo</h3>
     <p class="card__body">{{ site.contact.email }}</p>
-    <p style="margin-top: 1rem; color: #000; font-size: 0.9rem;" data-i18n-en="Send email →">Enviar correo →</p>
+    <p class="contact-email-link" data-i18n-en="Send email →">Enviar correo →</p>
   </a>
 </div>
 
@@ -76,3 +76,34 @@ i18n_prefix: contact
   });
 })();
 </script>
+
+<style>
+  .contact-grid {
+    margin-bottom: 3rem;
+  }
+
+  .contact-wa-btn {
+    width: 100%;
+  }
+
+  .contact-email-card {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .contact-email-link {
+    margin-top: 1rem;
+    color: #000;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 767px) {
+    .contact-email-card {
+      text-align: center;
+    }
+
+    .contact-email-link {
+      margin-top: 0.8rem;
+    }
+  }
+</style>

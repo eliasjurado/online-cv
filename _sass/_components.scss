@@ -347,6 +347,17 @@
   background: linear-gradient(180deg, $brand-primary-soft 0%, transparent 100%);
   border-bottom: 1px solid $brand-primary-line;
 }
+.page-header__inner {
+  .page-header__subtitle {
+    font-size: 1.1rem;
+    max-width: 36em;
+  }
+
+  @media (max-width: ($bp-md - 1)) {
+    text-align: center;
+    .page-header__subtitle { margin-inline: auto; }
+  }
+}
 .page-header__kicker {
   font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;
   color: $brand-accent; font-weight: 600; margin-bottom: $s-2;
