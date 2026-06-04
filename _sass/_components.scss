@@ -94,7 +94,7 @@
 .hero__avatar {
   // Líneas rectas — sin borde, sin background, sin shadow. El logo se presenta limpio y grande.
   width: 320px;
-  height: 320px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +103,7 @@
   & > img,
   & > svg {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
     display: block;
   }
@@ -111,11 +111,9 @@
   @media (max-width: ($bp-md - 1)) {
     order: -1;
     width: min(88vw, 380px);
-    height: auto;
-    aspect-ratio: 336.69 / 241;
   }
 
-  @media (min-width: $bp-md) { width: 420px; height: 420px; }
+  @media (min-width: $bp-md) { width: 420px; }
 }
 
 // Header brand monograma — el <img> con SVG nativo de Miki
