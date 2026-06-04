@@ -189,6 +189,11 @@
 .site-header__inner {
   display: flex; align-items: center; justify-content: space-between;
   gap: $s-4; padding-block: $s-3;
+
+  @media (max-width: ($bp-md - 1)) {
+    gap: $s-3;
+    padding-block: $s-2;
+  }
 }
 .site-header__brand {
   display: flex; align-items: center; gap: $s-3;
@@ -200,6 +205,11 @@
   // Monograma SVG inline — versión luxury black actual.
   .brand-monograma { color: $brand-primary; height: 34px; width: auto; flex-shrink: 0; }
   &:hover .brand-monograma { color: $ink-pure; }
+
+  @media (max-width: ($bp-md - 1)) {
+    gap: $s-2;
+    font-size: 1rem;
+  }
 }
 .site-nav {
   display: none;
@@ -220,17 +230,58 @@
 }
 .site-nav__toggle {
   display: inline-flex; @media (min-width: $bp-md) { display: none; }
-  background: none; border: 0; cursor: pointer; padding: $s-2;
-  color: $brand-primary; font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: $bg;
+  border: 1px solid $line;
+  cursor: pointer;
+  padding: 0;
+  color: $brand-primary;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: border-color $dur $ease, background-color $dur $ease, color $dur $ease, transform $dur $ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $brand-primary;
+    background: $bg-soft;
+    outline: none;
+  }
+
+  &[aria-expanded="true"] {
+    background: $brand-primary;
+    color: $bg;
+    border-color: $brand-primary;
+    transform: translateY(1px);
+  }
+
+  @media (max-width: ($bp-md - 1)) {
+    width: 38px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
 }
 .site-nav--mobile {
   display: none;
-  &.is-open { display: flex; flex-direction: column; gap: $s-3; padding: $s-4 0; border-top: 1px solid $line; }
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: $s-3 0 $s-4;
+    border-top: 1px solid $line;
+  }
   a {
     color: $ink;
-    font-size: 1.05rem;
-    padding: $s-2 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: $s-3 0;
     text-align: center;
+    border-bottom: 1px solid $line;
   }
 }
 
