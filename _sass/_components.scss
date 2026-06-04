@@ -47,6 +47,11 @@
   display: grid;
   gap: $s-6;
   align-items: center;
+
+  @media (max-width: ($bp-md - 1)) {
+    justify-items: center;
+  }
+
   @media (min-width: $bp-md) {
     grid-template-columns: 1fr auto;
     gap: $s-8;
@@ -70,6 +75,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-inline: auto;
+
   & > img,
   & > svg {
     width: 100%;
@@ -77,6 +84,14 @@
     object-fit: contain;
     display: block;
   }
+
+  @media (max-width: ($bp-md - 1)) {
+    order: -1;
+    width: min(88vw, 380px);
+    height: auto;
+    aspect-ratio: 336.69 / 241;
+  }
+
   @media (min-width: $bp-md) { width: 420px; height: 420px; }
 }
 
