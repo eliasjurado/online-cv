@@ -96,9 +96,14 @@ exclude:
   - vendor
 
 # ── Tracker (deshabilitado — Universal Analytics deprecado en jul-2023) ──────
-# Para habilitar GA4 en Fase C, agregar acá la GA4 measurement ID (G-XXXXX)
-# y descomentar el include en _includes/seo.html
+# Para habilitar GA4, coloca tu measurement ID (ej: G-AB12C3D4E5).
+# El snippet de GA4 se inyecta automaticamente desde _includes/seo.html
+# cuando este campo tiene valor.
 analytics:
+
+# ── Google Tag Manager (GTM) ────────────────────────────────────────────────
+# Contenedor GTM para gestionar etiquetas sin tocar codigo en cada cambio.
+gtm_container: 'GTM-MMX46W5Q'
 
 # ── Dev local ────────────────────────────────────────────────────────────────
 port: 4000

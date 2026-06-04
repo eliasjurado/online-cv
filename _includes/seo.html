@@ -14,6 +14,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="{{ site.chrome_mobile_color }}">
 
+{%- if site.gtm_container -%}
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),
+        dl=l!='dataLayer' ? '&l='+l : '';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ site.gtm_container }}');
+</script>
+<!-- End Google Tag Manager -->
+{%- endif -%}
+
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
 <!-- Open Graph -->
@@ -49,5 +66,14 @@
 <script src="{{ '/assets/js/analytics.js' | relative_url }}" defer></script>
 
 {%- if site.analytics -%}
-<!-- TODO Fase C: agregar GA4 si site.analytics tiene una G-XXXX measurement ID -->
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} // eslint-disable-line no-unused-vars
+  gtag('js', new Date());
+  gtag('config', '{{ site.analytics }}', {
+    anonymize_ip: true
+  });
+</script>
 {%- endif -%}

@@ -34,7 +34,8 @@ Estado: en progreso (2026-06-04)
 
 1. Implementar GA4 minimo viable.
 - Eventos: click_whatsapp, click_email, click_cta_services, lang_switch.
-- Implementado: capa de tracking JS y eventos disparados (pendiente conexion GA4 measurement ID en produccion).
+- Implementado: capa de tracking JS, eventos disparados y snippet GA4 condicional por `site.analytics`.
+- Pendiente: colocar Measurement ID real en produccion y validar en DebugView.
 - Impacto: medicion real del embudo.
 
 2. Hardening de accesibilidad.

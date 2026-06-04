@@ -10,6 +10,7 @@ Este directorio centraliza las especificaciones vivas del sitio.
 4. 03-technical-spec.md
 5. 04-roadmap-improvements.md
 6. 05-qa-smoke-checklist.md
+7. 06-ga4-debugview-setup.md
 
 ## Regla de mantenimiento
 
