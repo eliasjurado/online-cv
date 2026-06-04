@@ -2,7 +2,7 @@
 
 Version: propuesta
 Fecha: 2026-06-04
-Estado: pendiente de aprobacion
+Estado: aprobado y ejecutado (2026-06-04)
 
 ## 1) Objetivo
 
@@ -130,3 +130,22 @@ Fase 3 (i18n):
 - Rediseño completo de layout de /card/.
 - Nuevos bloques de contenido o storytelling largo.
 - A/B testing visual en esta iteracion.
+
+## 8) Resultado de ejecucion
+
+Implementado en [card.html](card.html):
+
+- Fase 1:
+  - GTM script + noscript integrados.
+  - `analytics.js` conectado.
+  - Datos de contacto unificados con `_config.yml`.
+  - Viewport accesible sin `maximum-scale=1`.
+
+- Fase 2:
+  - Acento WhatsApp alineado a paleta oficial.
+  - Estados de foco visibles en botones.
+  - Aria-labels en acciones principales.
+
+- Fase 3:
+  - i18n real activado en /card/ mediante `i18n-data` + `i18n.js`.
+  - Conservado el esquema `data-i18n="card.*"` existente.
