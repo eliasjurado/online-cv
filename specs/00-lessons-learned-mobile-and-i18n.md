@@ -46,6 +46,8 @@ Durante esta iteracion se corrigieron problemas de experiencia mobile:
 - Header de paginas internas estandarizado con clases reutilizables.
 - README actualizado al estado real del proyecto.
 - Checklist QA smoke documentado para pre-merge.
+- Cierre de menu con tecla Escape implementado (accesibilidad keyboard).
+- Capa minima de tracking implementada para eventos comerciales y cambio de idioma.
 
 ## Criterios para no repetir estos problemas
 

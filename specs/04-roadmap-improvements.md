@@ -30,13 +30,17 @@ Estado: completado (2026-06-04)
 
 ## P1
 
+Estado: en progreso (2026-06-04)
+
 1. Implementar GA4 minimo viable.
 - Eventos: click_whatsapp, click_email, click_cta_services, lang_switch.
+- Implementado: capa de tracking JS y eventos disparados (pendiente conexion GA4 measurement ID en produccion).
 - Impacto: medicion real del embudo.
 
 2. Hardening de accesibilidad.
 - Agregar cierre con Escape para menu mobile.
 - Revisar foco visible y orden de tab.
+- Implementado: cierre con Escape en menu mobile + retorno de foco al boton.
 
 3. Estandarizar estilos de paginas internas en SCSS compartido.
 - Evitar bloques <style> por pagina cuando no sea necesario.

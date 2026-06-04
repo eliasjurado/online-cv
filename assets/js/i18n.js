@@ -133,7 +133,15 @@
         e.preventDefault();
         var lang = btn.getAttribute('data-lang');
         if (SUPPORTED.indexOf(lang) === -1) return;
+        var currentLang = document.documentElement.getAttribute('lang') || detectLang();
         applyLang(lang);
+        if (currentLang !== lang && typeof window.eliasTrackEvent === 'function') {
+          window.eliasTrackEvent('lang_switch', {
+            from_lang: currentLang,
+            to_lang: lang,
+            page_path: window.location.pathname
+          });
+        }
       });
     }
   }
