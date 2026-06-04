@@ -68,6 +68,15 @@
   max-width: 36em;
   text-wrap: pretty;
 }
+.hero__actions {
+  display: flex;
+  gap: $s-4;
+  flex-wrap: wrap;
+
+  @media (max-width: ($bp-md - 1)) {
+    justify-content: center;
+  }
+}
 .hero__avatar {
   // Líneas rectas — sin borde, sin background, sin shadow. El logo se presenta limpio y grande.
   width: 320px;
