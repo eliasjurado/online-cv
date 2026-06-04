@@ -131,6 +131,8 @@ i18n_prefix: about
 
 <p data-i18n-en-html="My RUC is <strong>10434645421</strong>. If you need the invoice with specific tax details, just send them to me when we close the agreement.">Mi RUC es <strong>10434645421</strong>. Si necesitas la factura con datos tributarios específicos, me los pasas al cerrar el acuerdo.</p>
 
+<p data-i18n-en-html="<strong>All my prices include VAT (IGV).</strong> I accept every payment method — card, bank transfer, Yape and Plin. <strong>Pay by bank transfer and you get a 3% discount.</strong>"><strong>Todos mis precios incluyen IGV.</strong> Acepto todos los medios de pago — tarjeta, transferencia, Yape y Plin. <strong>Si pagas por transferencia bancaria, obtienes un 3% de descuento.</strong></p>
+
 </div>
 
 {% comment %}

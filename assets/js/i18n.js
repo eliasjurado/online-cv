@@ -124,16 +124,18 @@
 
   // ── Bind clicks al toggle ───────────────────────────────────────────────
   function bindToggle() {
-    var toggle = document.querySelector('[data-lang-toggle]');
-    if (!toggle) return;
-    toggle.addEventListener('click', function (e) {
-      var btn = e.target.closest('[data-lang]');
-      if (!btn) return;
-      e.preventDefault();
-      var lang = btn.getAttribute('data-lang');
-      if (SUPPORTED.indexOf(lang) === -1) return;
-      applyLang(lang);
-    });
+    var toggles = document.querySelectorAll('[data-lang-toggle]');
+    if (!toggles.length) return;
+    for (var i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener('click', function (e) {
+        var btn = e.target.closest('[data-lang]');
+        if (!btn) return;
+        e.preventDefault();
+        var lang = btn.getAttribute('data-lang');
+        if (SUPPORTED.indexOf(lang) === -1) return;
+        applyLang(lang);
+      });
+    }
   }
 
   // ── API pública ──────────────────────────────────────────────────────────

@@ -6,6 +6,8 @@
 #   - addons:   módulos opcionales que se suman a cualquier nivel.
 #
 # Precios en USD (referenciales). PEN se calcula 1 USD ≈ 3.75 PEN al render.
+# TODOS LOS PRECIOS INCLUYEN IGV. Comprobante: factura (cliente con RUC) o boleta (consumidor final).
+# Medios de pago: tarjeta, transferencia, Yape, Plin. Por transferencia bancaria: 3% de descuento.
 # Mantener Montserrat + paleta luxury black + esquinas vivas en cualquier UI que consuma este YAML.
 # Campos de texto bilingües: { es: "...", en: "..." }
 # Campos técnicos/numéricos (slug, icon, nivel, precio_*, plazo, cta_key, aplica_a): string sin traducir.
