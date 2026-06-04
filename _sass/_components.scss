@@ -67,6 +67,20 @@
   margin-bottom: $s-6;
   max-width: 36em;
   text-wrap: pretty;
+
+  @media (max-width: ($bp-md - 1)) {
+    font-size: 1.02rem;
+    line-height: 1.5;
+    margin-bottom: $s-5;
+  }
+}
+.hero__content {
+  @media (max-width: ($bp-md - 1)) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .hero__actions {
   display: flex;
