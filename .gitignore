@@ -6,3 +6,7 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache
+
+# Ruby / Bundler local
+vendor/
+.bundle/
